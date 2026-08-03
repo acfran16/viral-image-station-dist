@@ -1,0 +1,546 @@
+{
+  "updated": "2026-07-16",
+  "usage": "Choose individual reference IDs or copy an entire group into a campaign. These images are inspiration references, not finished campaign assets.",
+  "sources": [
+    {
+      "id": "youmind",
+      "name": "YouMind-OpenLab/awesome-gpt-image-2",
+      "url": "https://github.com/YouMind-OpenLab/awesome-gpt-image-2",
+      "license": "CC BY 4.0",
+      "license_url": "https://github.com/YouMind-OpenLab/awesome-gpt-image-2/blob/main/LICENSE"
+    },
+    {
+      "id": "erick",
+      "name": "erickkkyt/awesome-gptimage2-prompts",
+      "url": "https://github.com/erickkkyt/awesome-gptimage2-prompts",
+      "license": "CC0 1.0",
+      "license_url": "https://github.com/erickkkyt/awesome-gptimage2-prompts/blob/main/LICENSE"
+    },
+    {
+      "id": "magiccreator",
+      "name": "magiccreator-ai/awesome-gpt-image-2-prompts",
+      "url": "https://github.com/magiccreator-ai/awesome-gpt-image-2-prompts",
+      "license": "See source",
+      "license_url": "https://github.com/magiccreator-ai/awesome-gpt-image-2-prompts"
+    },
+    {
+      "id": "current-trend-research-2026-07",
+      "name": "Current AI photo trend research - July 2026",
+      "url": "https://www.eweek.com/news/ai-photo-editing-trends-2026/",
+      "license": "Project-generated preview images; external research attributed",
+      "license_url": "https://ponpon.ai/blog/viral-ai-photo-trends-2026"
+    },
+    {
+      "id": "automotive-photography-research-2026-08",
+      "name": "Automotive photography preset and retouch research - August 2026",
+      "url": "https://gridfiti.com/car-lightroom-presets/",
+      "license": "Project-generated prompt frames; external research attributed",
+      "license_url": "https://presetpedia.com/automotive-lightroom-presets/"
+    }
+  ],
+  "groups": [
+    {
+      "id": "product-commerce",
+      "number": "G01",
+      "name": "Product and Commerce",
+      "bulk_use": "Product launches, feature breakdowns, beauty, packaging, and e-commerce campaigns",
+      "references": [
+        {
+          "id": "R001",
+          "name": "VR exploded-view poster",
+          "file": "hosted-thumbnails/R001.jpg",
+          "source": "youmind",
+          "source_url": "https://github.com/YouMind-OpenLab/awesome-gpt-image-2#no-1-vr-headset-exploded-view-poster",
+          "use_for": "Exploded product diagrams, feature callouts, technical launch posters"
+        },
+        {
+          "id": "R002",
+          "name": "Minimal serum product shot",
+          "file": "hosted-thumbnails/R002.jpg",
+          "source": "erick",
+          "source_url": "https://github.com/erickkkyt/awesome-gptimage2-prompts/blob/main/assets/gpt-image-2-x-discussions/e-commerce-main-image-minimalist-hydrating-serum-product-shot-1.jpg",
+          "use_for": "Beauty, packaging, clean studio advertising, premium social posts"
+        },
+        {
+          "id": "R013",
+          "name": "Consumer tech handbook",
+          "file": "hosted-thumbnails/R013.jpg",
+          "source": "erick",
+          "source_url": "https://github.com/erickkkyt/awesome-gptimage2-prompts/blob/main/assets/gpt-image-2-x-discussions/create-premium-square-reference-style-consumer-technology-1.jpg",
+          "published": "2026-05-16",
+          "author": "Jack",
+          "use_for": "Technology launches, engineering callouts, premium feature breakdowns",
+          "prompt_frame": "Create a premium square consumer-technology handbook page around the supplied product. Use a realistic central render, modular specification cards, precision callouts, restrained futuristic accents, and an organized knowledge-first hierarchy."
+        },
+        {
+          "id": "R014",
+          "name": "Street-food product advertisement",
+          "file": "hosted-thumbnails/R014.jpg",
+          "source": "erick",
+          "source_url": "https://github.com/erickkkyt/awesome-gptimage2-prompts/blob/main/assets/gpt-image-2-x-discussions/premium-street-food-product-photograph-crispy-fried-1.jpg",
+          "published": "2026-05-16",
+          "author": "M",
+          "use_for": "Food launches, menus, delivery campaigns, texture-focused product ads",
+          "prompt_frame": "Create a premium commercial food photograph of the supplied dish. Use a clean hero composition, appetizing texture, controlled studio lighting, subtle supporting ingredients, and space for optional campaign copy."
+        }
+      ]
+    },
+    {
+      "id": "social-ui",
+      "number": "G02",
+      "name": "Social and Interface",
+      "bulk_use": "Livestreams, app screens, creator posts, launch mockups, and interface-led campaigns",
+      "references": [
+        {
+          "id": "R003",
+          "name": "Kawaii social greeting",
+          "file": "hosted-thumbnails/R003.jpg",
+          "source": "youmind",
+          "source_url": "https://github.com/YouMind-OpenLab/awesome-gpt-image-2#no-22-social-media-post---kawaii-pudding-riverside-greeting",
+          "use_for": "Friendly social posts, mascot campaigns, seasonal greetings"
+        },
+        {
+          "id": "R004",
+          "name": "Photo-editing interface",
+          "file": "hosted-thumbnails/R004.webp",
+          "source": "erick",
+          "source_url": "https://github.com/erickkkyt/awesome-gptimage2-prompts/blob/main/assets/gpt-image-2-web-examples/photo-editing-app-ui-mockup.webp",
+          "use_for": "App mockups, tool demonstrations, before-and-after creative"
+        },
+        {
+          "id": "R015",
+          "name": "Wellness social post",
+          "file": "hosted-thumbnails/R015.jpg",
+          "source": "erick",
+          "source_url": "https://github.com/erickkkyt/awesome-gptimage2-prompts/blob/main/assets/gpt-image-2-x-discussions/serene-visually-captivating-square-wellness-social-media-1.jpg",
+          "published": "2026-05-11",
+          "author": "Easy A.I.",
+          "use_for": "Wellness campaigns, quote posts, calm product announcements",
+          "prompt_frame": "Create a serene square wellness social post using the supplied subject or product. Combine soft natural imagery, generous negative space, restrained editorial typography, and a warm, credible lifestyle finish."
+        },
+        {
+          "id": "R016",
+          "name": "Mirror-selfie social collage",
+          "file": "hosted-thumbnails/R016.jpg",
+          "source": "erick",
+          "source_url": "https://github.com/erickkkyt/awesome-gptimage2-prompts/blob/main/assets/gpt-image-2-x-discussions/trendy-modern-social-media-mirror-selfie-collage-1.jpg",
+          "published": "2026-05-11",
+          "author": "Ciri",
+          "use_for": "Creator posts, fashion recaps, casual multi-image social layouts",
+          "prompt_frame": "Create a modern social-media mirror-selfie collage using the supplied adult subject. Preserve identity across frames, vary crop and pose naturally, and use clean scrapbook layering with subtle interface-inspired details."
+        }
+      ]
+    },
+    {
+      "id": "editorial-poster",
+      "number": "G03",
+      "name": "Editorial and Poster",
+      "bulk_use": "Campaign posters, fashion drops, city guides, event announcements, and carousels",
+      "references": [
+        {
+          "id": "R005",
+          "name": "Illustrated city food map",
+          "file": "hosted-thumbnails/R005.jpg",
+          "source": "youmind",
+          "source_url": "https://github.com/YouMind-OpenLab/awesome-gpt-image-2#no-2-illustrated-city-food-map",
+          "use_for": "Editorial maps, local guides, event or destination campaigns"
+        },
+        {
+          "id": "R006",
+          "name": "Premium fashion editorial",
+          "file": "hosted-thumbnails/R006.jpg",
+          "source": "erick",
+          "source_url": "https://github.com/erickkkyt/awesome-gptimage2-prompts/blob/main/assets/gpt-image-2-x-discussions/chatgpt-prompt-create-premium-high-fashion-editorial-1.jpg",
+          "use_for": "Fashion campaigns, product drops, strong typography and layouts"
+        },
+        {
+          "id": "R017",
+          "name": "Watercolor travel journal",
+          "file": "hosted-thumbnails/R017.jpg",
+          "source": "erick",
+          "source_url": "https://github.com/erickkkyt/awesome-gptimage2-prompts/blob/main/assets/gpt-image-2-x-discussions/dreamy-watercolor-travel-illustration-peaceful-korean-city-1.jpg",
+          "published": "2026-05-16",
+          "author": "Taaruk",
+          "use_for": "Destination campaigns, city guides, event posters, editorial postcards",
+          "prompt_frame": "Create a hand-painted travel-journal poster of the supplied destination. Mix delicate ink linework, soft watercolor washes, wet-street reflections, local architecture, paper texture, and a calm editorial postcard composition."
+        },
+        {
+          "id": "R018",
+          "name": "Swiss modernist travel poster",
+          "file": "hosted-thumbnails/R018.jpg",
+          "source": "erick",
+          "source_url": "https://github.com/erickkkyt/awesome-gptimage2-prompts/blob/main/assets/gpt-image-2-x-discussions/create-ultra-high-resolution-swiss-modernist-typography-1.jpg",
+          "published": "2026-05-12",
+          "author": "Shore Lyn",
+          "use_for": "Events, destinations, bold announcements, typography-led campaigns",
+          "prompt_frame": "Create a Swiss-modernist poster for the supplied place, event, or offer. Use a disciplined grid, bold geometric typography, limited high-contrast color, strong negative space, and one clear photographic or illustrated anchor."
+        }
+      ]
+    },
+    {
+      "id": "character-story",
+      "number": "G04",
+      "name": "Character and Story",
+      "bulk_use": "Character campaigns, story worlds, game concepts, comics, and consistency sheets",
+      "references": [
+        {
+          "id": "R007",
+          "name": "Anime martial-arts scene",
+          "file": "hosted-thumbnails/R007.jpg",
+          "source": "youmind",
+          "source_url": "https://github.com/YouMind-OpenLab/awesome-gpt-image-2#no-5-anime-martial-arts-battle-illustration",
+          "use_for": "Action scenes, illustrated storytelling, dynamic compositions"
+        },
+        {
+          "id": "R008",
+          "name": "Character blueprint sheet",
+          "featured_rank": 2,
+          "trend_name": "Character Consistency 9-Grid",
+          "published": "2026-07-02",
+          "file": "hosted-thumbnails/R008.jpg",
+          "source": "erick",
+          "source_url": "https://github.com/erickkkyt/awesome-gptimage2-prompts/blob/main/assets/gpt-image-2-x-discussions/anime-character-blueprint-sheet-1.jpg",
+          "use_for": "Character consistency, turnarounds, expression and wardrobe sheets"
+        },
+        {
+          "id": "R019",
+          "name": "Cinematic character development board",
+          "file": "hosted-thumbnails/R019.jpg",
+          "source": "erick",
+          "source_url": "https://github.com/erickkkyt/awesome-gptimage2-prompts/blob/main/assets/gpt-image-2-x-discussions/create-cinematic-realistic-character-design-board-high-1.jpg",
+          "published": "2026-05-12",
+          "author": "GPTProto Official",
+          "use_for": "Film characters, recurring campaign personas, wardrobe and prop continuity",
+          "prompt_frame": "Create a cinematic character-development board using the supplied identity reference. Show consistent front, profile, expression, wardrobe, and prop studies with production-design notes and a restrained studio presentation."
+        },
+        {
+          "id": "R020",
+          "name": "Nine-panel animated storyboard",
+          "file": "hosted-thumbnails/R020.jpg",
+          "source": "erick",
+          "source_url": "https://github.com/erickkkyt/awesome-gptimage2-prompts/blob/main/assets/gpt-image-2-x-discussions/storyboard-sheet-15s-comedic-animated-short-9-1.jpg",
+          "published": "2026-05-10",
+          "author": "MayorkingAI",
+          "use_for": "Short-form stories, ad sequences, animation planning, narrative carousels",
+          "prompt_frame": "Create a clean nine-panel storyboard for a short narrative. Maintain character and environment continuity, vary camera angles intentionally, make each beat readable without captions, and preserve a clear beginning, turn, and payoff."
+        },
+        {
+          "id": "R025",
+          "name": "Minecraft-style brand biome",
+          "file": "hosted-thumbnails/R025.jpg",
+          "source": "magiccreator",
+          "source_url": "https://github.com/magiccreator-ai/awesome-gpt-image-2-prompts#6-minecraft-style-brand-environment",
+          "published": "2026-07-16",
+          "use_for": "Game-world campaigns, blocky brand environments, product worlds, character backdrops, playful social posts",
+          "prompt_frame": "Create a block-based voxel world inspired by the supplied brand, product, character, place, or campaign. Build a playable-looking biome from cube blocks with terrain, trees, water, paths, buildings, signs, statues, or product landmarks translated into pixel-art structures. Preserve the subject's recognizable colors, motifs, and mood while keeping the scene original, immersive, and readable at social-media size. Avoid using protected game logos, exact game UI, copyrighted characters, or marketplace claims unless explicitly provided."
+        }
+      ]
+    },
+    {
+      "id": "infographic-education",
+      "number": "G05",
+      "name": "Infographic and Education",
+      "bulk_use": "Explainers, comparisons, product education, process slides, and data-led posts",
+      "references": [
+        {
+          "id": "R009",
+          "name": "3D evolution infographic",
+          "file": "hosted-thumbnails/R009.jpg",
+          "source": "youmind",
+          "source_url": "https://github.com/YouMind-OpenLab/awesome-gpt-image-2#no-6-3d-stone-staircase-evolution-infographic",
+          "use_for": "Progressions, timelines, staged processes, educational posters"
+        },
+        {
+          "id": "R010",
+          "name": "Comparison table",
+          "file": "hosted-thumbnails/R010.jpg",
+          "source": "erick",
+          "source_url": "https://github.com/erickkkyt/awesome-gptimage2-prompts/blob/main/assets/gpt-image-2-web-examples/api-pricing-comparison-table.png",
+          "use_for": "Feature comparisons, pricing grids, product selection guides"
+        },
+        {
+          "id": "R021",
+          "name": "Outdoor gear field guide",
+          "file": "hosted-thumbnails/R021.jpg",
+          "source": "erick",
+          "source_url": "https://github.com/erickkkyt/awesome-gptimage2-prompts/blob/main/assets/gpt-image-2-x-discussions/create-premium-square-reference-style-outdoor-gear-1.jpg",
+          "published": "2026-05-12",
+          "author": "Jack",
+          "use_for": "Equipment explainers, product ecosystems, field guides, feature education",
+          "prompt_frame": "Create a premium field-guide infographic around the supplied equipment. Use one detailed hero render, organized specification modules, material callouts, usage diagrams, and an authoritative editorial hierarchy."
+        },
+        {
+          "id": "R022",
+          "name": "Food process storyboard",
+          "file": "hosted-thumbnails/R022.jpg",
+          "source": "erick",
+          "source_url": "https://github.com/erickkkyt/awesome-gptimage2-prompts/blob/main/assets/gpt-image-2-x-discussions/create-crisp-clean-infographic-storyboard-poster-pasta-1.jpg",
+          "published": "2026-05-11",
+          "author": "TechieSA",
+          "use_for": "Recipes, production steps, tutorials, behind-the-scenes carousels",
+          "prompt_frame": "Create a crisp process storyboard showing the supplied recipe or workflow step by step. Use consistent tools, ingredients, hands, lighting, numbered panels, and a clean educational layout."
+        }
+      ]
+    },
+    {
+      "id": "photo-lifestyle",
+      "number": "G06",
+      "name": "Photography and Lifestyle",
+      "bulk_use": "Creator content, candid social posts, portraits, lookbooks, and documentary campaigns",
+      "references": [
+        {
+          "id": "R011",
+          "name": "Casual bedroom selfie",
+          "featured_rank": 1,
+          "trend_name": "Natural Social Media Photo",
+          "published": "2026-07-03",
+          "file": "hosted-thumbnails/R011.jpg",
+          "source": "youmind",
+          "source_url": "https://github.com/YouMind-OpenLab/awesome-gpt-image-2#no-9-profile--avatar---lazy-morning-bedroom-selfie",
+          "use_for": "Casual creator content, natural phone photography, intimate lifestyle posts"
+        },
+        {
+          "id": "R012",
+          "name": "35mm flash editorial",
+          "featured_rank": 3,
+          "trend_name": "Luxury Summer Polaroid Collage",
+          "published": "2026-07-01",
+          "file": "hosted-thumbnails/R012.jpg",
+          "source": "erick",
+          "source_url": "https://github.com/erickkkyt/awesome-gptimage2-prompts/blob/main/assets/gpt-image-2-x-discussions/35mm-flash-editorial-portrait-1.jpg",
+          "use_for": "Lookbooks, nightlife, direct-flash portraits, fashion editorials"
+        },
+        {
+          "id": "R023",
+          "name": "Cinematic night-motion selfie",
+          "file": "hosted-thumbnails/R023.jpg",
+          "source": "erick",
+          "source_url": "https://github.com/erickkkyt/awesome-gptimage2-prompts/blob/main/assets/gpt-image-2-x-discussions/cinematic-night-time-selfie-young-woman-riding-1.jpg",
+          "published": "2026-05-16",
+          "author": "Aijaz",
+          "use_for": "Nightlife creators, music campaigns, city motion, cinematic portraits",
+          "prompt_frame": "Create a cinematic night-motion selfie using the supplied adult subject. Use a low wide-angle phone perspective, neon light trails, believable motion blur, subtle grain, and an introspective urban mood while preserving identity."
+        },
+        {
+          "id": "R024",
+          "name": "Cozy park lifestyle",
+          "file": "hosted-thumbnails/R024.jpg",
+          "source": "erick",
+          "source_url": "https://github.com/erickkkyt/awesome-gptimage2-prompts/blob/main/assets/gpt-image-2-x-discussions/cozy-aesthetic-girl-park-aesthetic-lifestyle-photography-1.jpg",
+          "published": "2026-05-16",
+          "author": "Sairah",
+          "use_for": "Morning routines, creator lifestyle, seasonal campaigns, cozy products",
+          "prompt_frame": "Create a cozy lifestyle photograph of the supplied adult subject in a quiet park or cafe setting. Use soft morning light, warm natural color, candid body language, simple props, and an approachable social-media finish."
+        }
+      ]
+    },
+    {
+      "id": "current-trends",
+      "number": "G07",
+      "name": "Current 10 - July 2026",
+      "bulk_use": "Fast-moving AI photo transformations for TikTok, Instagram, Reels, creator campaigns, and social experiments",
+      "references": [
+        {
+          "id": "R026",
+          "name": "Designer action figure package",
+          "trend_name": "Designer Action Figure Package",
+          "current_rank": 1,
+          "file": "hosted-thumbnails/R026.jpg",
+          "source": "current-trend-research-2026-07",
+          "source_url": "https://www.eweek.com/news/ai-photo-editing-trends-2026/",
+          "published": "2026-07-16",
+          "use_for": "Personal-brand reveals, team spotlights, creator launches, collectible product concepts",
+          "prompt_frame": "Transform the supplied adult subject, mascot, or product character into a premium molded collectible inside clear retail blister packaging. Preserve the recognizable face, hair, proportions, outfit cues, and brand colors. Arrange two or three meaningful accessories in separate fitted compartments. Use straight-on commercial toy photography, realistic plastic reflections, crisp softbox lighting, controlled shadows, and a package silhouette that reads immediately on mobile. Keep packaging geometry clean; omit small copy unless exact wording is supplied. No accidental logos, duplicate accessories, malformed hands, or watermark."
+        },
+        {
+          "id": "R027",
+          "name": "Candid instant-film portrait",
+          "trend_name": "Candid AI Polaroid",
+          "current_rank": 2,
+          "file": "hosted-thumbnails/R027.jpg",
+          "source": "current-trend-research-2026-07",
+          "source_url": "https://ponpon.ai/blog/viral-ai-photo-trends-2026",
+          "published": "2026-07-16",
+          "use_for": "Friendship, reunion, creator, fashion, and behind-the-scenes posts",
+          "prompt_frame": "Create one candid instant-film snapshot using the supplied adult subject reference or references. Preserve each identity and the natural relationship between subjects. Use a thick asymmetric white instant-film border, hard on-camera flash, slightly overexposed foreground, warm faded color shift, fine grain, soft focus, and background falloff into shadow. Frame it like a spontaneous memory with a slightly imperfect crop and believable hand placement. Keep the environment simple and lived-in. No celebrity insertion unless explicitly supplied, no duplicate faces, no synthetic glamour retouching, and no watermark."
+        },
+        {
+          "id": "R028",
+          "name": "Multi-era yearbook grid",
+          "trend_name": "Multi-Era AI Yearbook Grid",
+          "current_rank": 3,
+          "file": "hosted-thumbnails/R028.jpg",
+          "source": "current-trend-research-2026-07",
+          "source_url": "https://ponpon.ai/blog/viral-ai-photo-trends-2026",
+          "published": "2026-07-16",
+          "use_for": "Nostalgia carousels, identity-led hooks, team and creator series",
+          "prompt_frame": "Create a clean 2x2 yearbook portrait grid showing the same supplied adult identity across four selected eras. Lock facial structure, skin tone, eye color, and recognizable features in every panel. Change only period-appropriate hair, grooming, wardrobe, mottled studio backdrop, lens softness, and print color response. Use a consistent chest-up pose and authentic school-photo key lighting. Keep each era distinct without parody. No school names, fake signatures, unreadable captions, identity drift, or watermark."
+        },
+        {
+          "id": "R029",
+          "name": "1980s cinematic time travel",
+          "trend_name": "Cinematic Time Travel",
+          "current_rank": 4,
+          "file": "hosted-thumbnails/R029.jpg",
+          "source": "current-trend-research-2026-07",
+          "source_url": "https://www.eweek.com/news/ai-photo-editing-trends-2026/",
+          "published": "2026-07-16",
+          "use_for": "Fashion, music, location, heritage, and personal-brand stories",
+          "prompt_frame": "Place the supplied adult subject into a clearly named year and location. Preserve identity and body proportions while adapting wardrobe, hair, props, architecture, vehicles, practical lighting, lens character, film stock, and color response to that period. Integrate light and shadow across the subject and environment so the image feels photographed there, not composited. Use one decisive cinematic moment and a social-safe crop. Avoid era-mixing, modern objects, fake brand marks, unreadable signage, anatomy drift, and watermark."
+        },
+        {
+          "id": "R030",
+          "name": "Imperfect disposable-camera memory",
+          "trend_name": "Beautifully Imperfect Film Memory",
+          "current_rank": 5,
+          "file": "hosted-thumbnails/R030.jpg",
+          "source": "current-trend-research-2026-07",
+          "source_url": "https://www.eweek.com/news/ai-photo-editing-trends-2026/",
+          "published": "2026-07-16",
+          "use_for": "Authentic creator posts, friendship memories, fashion recaps, and event photos",
+          "prompt_frame": "Turn the supplied adult subject or group into a late-1990s or early-2000s disposable-camera memory. Preserve identity while using off-center framing, one intentional edge crop, dusty film grain, tiny scratches, uneven exposure, mild red-eye where plausible, a single corner light leak, and slight movement blur. Mix available light with direct flash and keep expressions candid. The result should feel found in a photo envelope, not professionally art-directed. Avoid heavy beauty retouching, staged symmetry, duplicated limbs, fake logos, and watermark."
+        },
+        {
+          "id": "R031",
+          "name": "Tactile scrapbook travel journal",
+          "trend_name": "Scrapbook Digital Journal",
+          "current_rank": 6,
+          "file": "hosted-thumbnails/R031.jpg",
+          "source": "current-trend-research-2026-07",
+          "source_url": "https://www.eweek.com/news/ai-photo-editing-trends-2026/",
+          "published": "2026-07-16",
+          "use_for": "Travel, fashion recap, relationship, product story, and carousel covers",
+          "prompt_frame": "Build one tactile scrapbook journal page from the supplied subject, product, or campaign references. Use one dominant photograph and two or three supporting moments with consistent identity and product details. Layer torn paper, instant-photo borders, tape, ticket-like shapes, pressed botanicals, stamps, and restrained handwritten-mark textures with realistic paper depth and shadows. Keep the page readable at mobile size and leave a clean area for optional captioning. Do not invent readable handwriting, real ticket data, logos, duplicate faces, or watermark."
+        },
+        {
+          "id": "R032",
+          "name": "Faux prestige thriller poster",
+          "trend_name": "Faux Prestige Movie Poster",
+          "current_rank": 7,
+          "file": "hosted-thumbnails/R032.jpg",
+          "source": "current-trend-research-2026-07",
+          "source_url": "https://www.eweek.com/news/ai-photo-editing-trends-2026/",
+          "published": "2026-07-16",
+          "use_for": "Campaign reveals, event invitations, creator announcements, and story hooks",
+          "prompt_frame": "Create fictional prestige movie key art using the supplied adult subject, product, or character. Preserve identity and build one clear genre moment with controlled cinematic lighting, subtle film grain, atmospheric depth, and calm negative space. Use only the supplied short title in a restrained, readable typographic position; add no critic quotes, studio marks, release date, or cast names unless exact copy is provided. Keep the image legible as a social thumbnail. Avoid copyrighted franchise styling, incoherent reflections, unreadable copy, and watermark."
+        },
+        {
+          "id": "R033",
+          "name": "Kinetic city motion-blur fashion still",
+          "trend_name": "Kinetic Motion-Blur Still",
+          "current_rank": 8,
+          "file": "hosted-thumbnails/R033.jpg",
+          "source": "current-trend-research-2026-07",
+          "source_url": "https://www.eweek.com/news/ai-photo-editing-trends-2026/",
+          "published": "2026-07-16",
+          "use_for": "Fashion, sport, music, automotive, and high-energy launch posts",
+          "prompt_frame": "Create a kinetic slow-shutter photograph using the supplied adult subject, product, athlete, vehicle, or performer as the sharp visual anchor. Keep the hero face, body, product details, and contact points crisp while movement in the environment creates directional blur, light streaks, and subtle camera shake. Use realistic panning physics, integrated practical light, grounded feet or believable object contact, and a strong path through the frame. Do not blur the identity or product, duplicate limbs, float the subject, add logos, or add a watermark."
+        },
+        {
+          "id": "R034",
+          "name": "Y2K record-store camcorder frame",
+          "trend_name": "Y2K Mini-DV Freeze Frame",
+          "current_rank": 9,
+          "file": "hosted-thumbnails/R034.jpg",
+          "source": "current-trend-research-2026-07",
+          "source_url": "https://www.eweek.com/news/ai-photo-editing-trends-2026/",
+          "published": "2026-07-16",
+          "use_for": "Fashion recaps, music culture, creator diaries, and behind-the-scenes posts",
+          "prompt_frame": "Create an early-2000s mini-DV camcorder freeze-frame using the supplied adult subject or product references. Preserve identity, wardrobe, and key product details while using handheld shoulder-level framing, slight wide-angle distortion, interlaced scan texture, low-light sensor noise, cool white balance, clipped fluorescent highlights, and mild digital bloom. Capture a specific candid activity rather than a posed portrait. Leave room where a timestamp could sit but do not render one unless exact text is supplied. Avoid fake logos, identity drift, malformed hands, and watermark."
+        },
+        {
+          "id": "R035",
+          "name": "Four-beat consistent character story",
+          "trend_name": "Consistent Character Micro-Story",
+          "current_rank": 10,
+          "file": "hosted-thumbnails/R035.jpg",
+          "source": "current-trend-research-2026-07",
+          "source_url": "https://www.eweek.com/news/ai-photo-editing-trends-2026/",
+          "published": "2026-07-16",
+          "use_for": "Four-beat brand stories, mini comics, creator narratives, and product journeys",
+          "prompt_frame": "Create a four-panel micro-story using the supplied adult identity, character, mascot, or product. Define four clear beats: setup, action, discovery or turn, and payoff. Lock the face, hair, body proportions, wardrobe, product shape, product color, and key accessories across every panel. Vary camera language intentionally with wide, medium, detail, and over-shoulder views while keeping lighting and location continuity. Make the sequence readable without captions. Avoid duplicate panels, identity drift, altered product graphics, malformed hands, unreadable text, and watermark."
+        },
+        {
+          "id": "R036",
+          "name": "Empire State maintenance catwalk selfie",
+          "trend_name": "Empire State Selfie",
+          "file": "hosted-thumbnails/R036.jpg",
+          "source": "getintoai",
+          "source_url": "https://www.instagram.com/getintoai/",
+          "published": "2026-07-17",
+          "use_for": "Viral identity-transfer selfie at a forbidden or aspirational location — looks like a real leaked photo",
+          "prompt_frame": "iPhone front-camera selfie. Use the reference images only to preserve identity — facial features, hairstyle, body proportions. Do not copy clothing from references; dress subject(s) in casual street clothing appropriate for a cold windy day at height. Two people are taking a spontaneous selfie from the Empire State Building's narrow outdoor maintenance catwalk — the kind that wraps the building's upper spire, not the public observation deck. No other tourists or bystanders visible anywhere. One person holds the phone naturally at arm's length using the front camera; both subjects lean slightly toward each other and the camera, looking at the screen not the lens, relaxed expressions as if capturing a quick memory rather than posing. The Manhattan skyline is visible far below in the background, the catwalk railing or steel structure visible at the edge of frame. Authentic iPhone front-camera physics: 24–26mm equivalent ultra-wide lens, visible barrel distortion at frame edges, outstretched arm visible, natural hand position, imperfect framing, slight horizon tilt, casual crop, subtle finger shadow near one corner. Subtle HDR processing, slightly over-sharpened smartphone detail, realistic skin texture with visible pores and small imperfections, wind-affected hair and clothing wrinkles, harsh daylight with slightly lifted shadows, faint lens smudging, minimal digital noise, natural color science. Photorealistic, candid, not professional, not cinematic, not influencer-style — a believable snapshot that looks like it was posted straight from the camera roll."
+        },
+        {
+          "id": "R037",
+          "name": "GTA VI loading screen portrait",
+          "trend_name": "GTA VI Loading Screen Portrait",
+          "file": "hosted-thumbnails/R037.jpg",
+          "source": "getintoai",
+          "source_url": "https://www.instagram.com/getintoai/",
+          "published": "2026-07-17",
+          "use_for": "Transform a reference photo into official-quality GTA VI loading screen commercial art with Vice City palette",
+          "prompt_frame": "Transform the uploaded reference photo into a high-end commercial illustration inspired by the promotional loading screen artwork of Grand Theft Auto VI and Grand Theft Auto: Vice City. Preserve the exact identity, pose, facial features, clothing, accessories, hairstyle, camera angle, and overall composition of the original photo — do not alter the person. Reimagine the existing background rather than replacing it: keep the original location immediately recognizable by preserving its layout, perspective, architecture, streets, natural features, landmarks, and overall atmosphere. Reinterpret the environment as if it exists naturally within the world of GTA VI's Vice City — enhance it with richer visual storytelling, more stylized architecture, cinematic lighting, refined environmental details, vibrant colors, subtle signage, atmospheric depth, and immersive world-building while respecting the purpose and character of the original location. Add vehicles, pedestrians, storefronts, vegetation, palm trees, street furniture, neon lighting, luxury details, or urban activity only where they naturally belong. If the original scene is residential, rural, industrial, mountainous, indoors, or otherwise quiet and unsuited to traffic or crowds, do not introduce unnecessary cars, palm trees, pedestrians, or city elements — every environmental addition must feel like a believable evolution of the original scene, not a replacement. Illustrate using the iconic GTA VI commercial art style: photorealistic base with subtle stylization, vibrant cinematic color grading, deep contrast, warm Vice City palette (sunset oranges, hot pinks, ocean teals, deep purples), heightened detail on clothing and accessories, slight painterly texture in shadow regions, cinematic rim lighting on the figure. The result should feel like official Rockstar Games promotional key art — a loading screen poster, not fan art."
+        }
+      ]
+    },
+    {
+      "id": "automotive-photography",
+      "number": "G08",
+      "name": "Automotive Photography",
+      "bulk_use": "Full retouch and grade of supplied car photographs — five stylized looks, each sharing the same complete editing stack with a distinct final aesthetic",
+      "references": [
+        {
+          "id": "R038",
+          "name": "Showroom Clean retouch",
+          "file": null,
+          "source": "automotive-photography-research-2026-08",
+          "source_url": "https://gridfiti.com/car-lightroom-presets/",
+          "published": "2026-08-02",
+          "use_for": "Dealer brochures, manufacturer press shots, product launch imagery, neutral hero shots",
+          "prompt_frame": "Perform a full editorial retouch on this car photograph as a professional automotive retoucher. Exposure and color: correct white balance to neutral, set accurate exposure, recover highlight detail in the paint, and lift shadow detail without flattening contrast. Paint and panels: remove reflections of the photographer, light stands, and surrounding clutter from the body panels while preserving natural environment reflections that define the car's shape; smooth panels to clean gradients; eliminate dust, water spots, and minor scratches. Detail pass: clean brake dust from wheel barrels, deepen tire black, clarify headlight and taillight lenses, and polish chrome and brightwork. Scene cleanup: remove trash, cones, poles, stray vehicles, and people from the background without altering the location; repair pavement blemishes under and around the car. Final grade — Showroom Clean: neutral whites, accurate paint color, crisp micro-contrast, zero color cast, low grain — the result should look like manufacturer press photography. Preserve the original car exactly: same body shape, proportions, wheels, badges, paint color, license plate, camera angle, focal length, composition, and crop. Do not add, remove, move, or reshape any object. This is a retouch of the supplied photo, not a new image."
+        },
+        {
+          "id": "R039",
+          "name": "Golden Hour Warm retouch",
+          "file": null,
+          "source": "automotive-photography-research-2026-08",
+          "source_url": "https://gridfiti.com/car-lightroom-presets/",
+          "published": "2026-08-02",
+          "use_for": "Lifestyle automotive content, social media, natural light shots, aspirational car posts",
+          "prompt_frame": "Perform a full editorial retouch on this car photograph as a professional automotive retoucher. Exposure and color: correct white balance and exposure, recover highlight detail in the paint, and lift shadow detail without flattening contrast. Paint and panels: remove reflections of the photographer, light stands, and surrounding clutter from the body panels while preserving natural environment reflections that define the car's shape; smooth panels to clean gradients; eliminate dust, water spots, and minor scratches. Detail pass: clean brake dust from wheel barrels, deepen tire black, clarify headlight and taillight lenses, and polish chrome and brightwork. Scene cleanup: remove trash, cones, poles, stray vehicles, and people from the background without altering the location; repair pavement blemishes under and around the car. Final grade — Golden Hour Warm: push highlights toward amber-orange, introduce a soft magenta bias in the shadows, add gentle bloom on specular reflections, lift midtones slightly, and warm the overall color temperature as if the last 30 minutes of sunlight are hitting the car — even if the original was shot in flat light. Preserve the original car exactly: same body shape, proportions, wheels, badges, paint color, license plate, camera angle, focal length, composition, and crop. Do not add, remove, move, or reshape any object. This is a retouch of the supplied photo, not a new image."
+        },
+        {
+          "id": "R040",
+          "name": "Moody Editorial retouch",
+          "file": null,
+          "source": "automotive-photography-research-2026-08",
+          "source_url": "https://presetpedia.com/automotive-lightroom-presets/",
+          "published": "2026-08-02",
+          "use_for": "Car magazine spreads, performance and luxury editorial, automotive influencer content, dark or dramatic cars",
+          "prompt_frame": "Perform a full editorial retouch on this car photograph as a professional automotive retoucher. Exposure and color: correct white balance and exposure, recover highlight detail in the paint, and lift shadow detail without flattening contrast. Paint and panels: remove reflections of the photographer, light stands, and surrounding clutter from the body panels while preserving natural environment reflections that define the car's shape; smooth panels to clean gradients; eliminate dust, water spots, and minor scratches. Detail pass: clean brake dust from wheel barrels, deepen tire black, clarify headlight and taillight lenses, and polish chrome and brightwork. Scene cleanup: remove trash, cones, poles, stray vehicles, and people from the background without altering the location; repair pavement blemishes under and around the car. Final grade — Moody Editorial: crush the blacks deep, cool the shadows toward teal, keep highlights near neutral or slightly cool, pull saturation back across the image while allowing one accent color to remain slightly more saturated, apply a cinematic contrast curve. The result should feel like a car magazine double-page spread — dark, intentional, controlled. Preserve the original car exactly: same body shape, proportions, wheels, badges, paint color, license plate, camera angle, focal length, composition, and crop. Do not add, remove, move, or reshape any object. This is a retouch of the supplied photo, not a new image."
+        },
+        {
+          "id": "R041",
+          "name": "Matte Luxury retouch",
+          "file": null,
+          "source": "automotive-photography-research-2026-08",
+          "source_url": "https://websitetipsandtutorials.com/best-lightroom-presets-for-cars/",
+          "published": "2026-08-02",
+          "use_for": "Luxury car content, lifestyle automotive posts, matte-finish vehicles, premium brand campaigns",
+          "prompt_frame": "Perform a full editorial retouch on this car photograph as a professional automotive retoucher. Exposure and color: correct white balance and exposure, recover highlight detail in the paint, and lift shadow detail without flattening contrast. Paint and panels: remove reflections of the photographer, light stands, and surrounding clutter from the body panels while preserving natural environment reflections that define the car's shape; smooth panels to clean gradients; eliminate dust, water spots, and minor scratches. Detail pass: clean brake dust from wheel barrels, deepen tire black, clarify headlight and taillight lenses, and polish chrome and brightwork. Scene cleanup: remove trash, cones, poles, stray vehicles, and people from the background without altering the location; repair pavement blemishes under and around the car. Final grade — Matte Luxury: lift blacks slightly so they never fully crush, pull saturation back to a velvety muted palette, reduce clarity slightly for a soft tactile finish, use a warm-neutral bias in the midtones. The result should feel expensive and restrained — as if the car has a matte wrap even if the paint is glossy. Preserve the original car exactly: same body shape, proportions, wheels, badges, paint color, license plate, camera angle, focal length, composition, and crop. Do not add, remove, move, or reshape any object. This is a retouch of the supplied photo, not a new image."
+        },
+        {
+          "id": "R042",
+          "name": "Night Urban retouch",
+          "file": null,
+          "source": "automotive-photography-research-2026-08",
+          "source_url": "https://presetpedia.com/automotive-lightroom-presets/",
+          "published": "2026-08-02",
+          "use_for": "Night car photography, urban automotive content, city shoot edits, neon-lit environments",
+          "prompt_frame": "Perform a full editorial retouch on this car photograph as a professional automotive retoucher. Exposure and color: correct white balance and exposure, recover highlight detail in the paint, and lift shadow detail without flattening contrast. Paint and panels: remove reflections of the photographer, light stands, and surrounding clutter from the body panels while preserving and enhancing the neon and artificial light reflections that are naturally present in the scene; smooth panels to clean gradients; eliminate dust and minor scratches. Detail pass: clean brake dust from wheel barrels, deepen tire black, clarify headlight and taillight lenses, polish chrome and brightwork, and enhance practical light sources already in the scene. Scene cleanup: remove distracting background elements without altering the urban location; repair pavement blemishes. Final grade — Night Urban: lift blacks slightly into a cool lifted base, separate cool shadows from warm highlights (where warm practical lights exist), apply controlled bloom on streetlights, signs, and headlights that are already in the frame, and preserve the color of neon and artificial sources already reflected in the paint. The result should feel cinematic and premium without adding light sources that were not there. Preserve the original car exactly: same body shape, proportions, wheels, badges, paint color, license plate, camera angle, focal length, composition, and crop. Do not add, remove, move, or reshape any object. This is a retouch of the supplied photo, not a new image."
+        }
+      ]
+    }
+  ]
+}

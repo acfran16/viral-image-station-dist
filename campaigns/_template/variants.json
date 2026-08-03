@@ -1,0 +1,87 @@
+{
+  "campaign": "replace-with-campaign-name",
+  "reference_policy": "Use all files in references unless a variant specifies a narrower set.",
+  "outputs": [
+    {
+      "number": "001",
+      "name": "Instagram square hero",
+      "platform": "Instagram / Facebook",
+      "aspect_ratio": "1:1",
+      "purpose": "Main feed post",
+      "trend_id": "302",
+      "filename": "001-instagram-square-hero.png",
+      "status": "not-started"
+    },
+    {
+      "number": "002",
+      "name": "Reels vertical cover",
+      "platform": "TikTok / Reels / Shorts",
+      "aspect_ratio": "9:16",
+      "purpose": "Vertical cover image",
+      "trend_id": "002",
+      "filename": "002-reels-cover-vertical.png",
+      "status": "not-started"
+    },
+    {
+      "number": "003",
+      "name": "Story teaser",
+      "platform": "Instagram Stories",
+      "aspect_ratio": "9:16",
+      "purpose": "Short-lived teaser",
+      "trend_id": "201",
+      "filename": "003-story-teaser.png",
+      "status": "not-started"
+    },
+    {
+      "number": "004",
+      "name": "Carousel hook",
+      "platform": "Instagram carousel",
+      "aspect_ratio": "4:5",
+      "purpose": "First carousel slide with strongest hook",
+      "trend_id": "301",
+      "filename": "004-carousel-hook.png",
+      "status": "not-started"
+    },
+    {
+      "number": "005",
+      "name": "Carousel detail",
+      "platform": "Instagram carousel",
+      "aspect_ratio": "4:5",
+      "purpose": "Detail, benefit, process, or alternate angle",
+      "trend_id": "004",
+      "filename": "005-carousel-detail.png",
+      "status": "not-started"
+    },
+    {
+      "number": "006",
+      "name": "X post wide",
+      "platform": "X / LinkedIn",
+      "aspect_ratio": "16:9",
+      "purpose": "Wide social post",
+      "trend_id": "101",
+      "filename": "006-x-post-wide.png",
+      "status": "not-started"
+    },
+    {
+      "number": "007",
+      "name": "Pinterest pin",
+      "platform": "Pinterest",
+      "aspect_ratio": "2:3",
+      "purpose": "Tall discovery image",
+      "trend_id": "302",
+      "filename": "007-pinterest-pin.png",
+      "status": "not-started"
+    },
+    {
+      "number": "008",
+      "name": "Thumbnail",
+      "platform": "YouTube / general preview",
+      "aspect_ratio": "16:9",
+      "purpose": "High-contrast thumbnail",
+      "trend_id": "103",
+      "filename": "008-thumbnail.png",
+      "status": "not-started"
+    }
+  ]
+}
+

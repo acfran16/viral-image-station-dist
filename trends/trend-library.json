@@ -1,0 +1,574 @@
+{
+  "source": {
+    "name": "ZeroLu/awesome-gpt-image",
+    "url": "https://github.com/ZeroLu/awesome-gpt-image",
+    "usage": "Reference and adapt trend structures. Do not treat it as a code dependency."
+  },
+  "categories": [
+    {
+      "id": "current-ai-trends",
+      "name": "Current AI Trends - July 2026",
+      "as_of": "2026-07-16",
+      "trends": [
+        {
+          "id": "701",
+          "current_rank": 1,
+          "reference_id": "R026",
+          "name": "Designer Action Figure Package",
+          "formats": ["4:5", "9:16", "1:1"],
+          "purpose": "Personal-brand reveal, team spotlight, product or creator launch",
+          "tags": ["current", "toyification", "action figure", "packaging", "creator"],
+          "preview_hint": "A recognizable subject becomes a premium molded collectible with a small, intentional accessory set and believable retail photography.",
+          "source_credit": "eWeek and PonPon 2026 trend research",
+          "source_url": "https://www.eweek.com/news/ai-photo-editing-trends-2026/",
+          "reference_slots": ["subject identity", "outfit", "2-3 signature accessories", "brand palette"],
+          "prompt_frame": "Transform the supplied adult subject, mascot, or product character into a premium molded collectible inside clear retail blister packaging. Preserve the recognizable face, hair, proportions, outfit cues, and brand colors. Arrange two or three meaningful accessories in separate fitted compartments. Use straight-on commercial toy photography, realistic plastic reflections, crisp softbox lighting, controlled shadows, and a package silhouette that reads immediately on mobile. Keep packaging geometry clean; omit small copy unless exact wording is supplied. No accidental logos, duplicate accessories, malformed hands, or watermark."
+        },
+        {
+          "id": "702",
+          "current_rank": 2,
+          "reference_id": "R027",
+          "name": "Candid AI Polaroid",
+          "formats": ["4:5", "1:1", "9:16"],
+          "purpose": "Friendship, reunion, creator, fashion, or behind-the-scenes post",
+          "tags": ["current", "polaroid", "instant film", "flash", "candid"],
+          "preview_hint": "An intimate instant-film snapshot with blown frontal flash, soft background falloff, imperfect framing, and a thick white border.",
+          "source_credit": "PonPon 2026 trend research",
+          "source_url": "https://ponpon.ai/blog/viral-ai-photo-trends-2026",
+          "reference_slots": ["primary identity", "second identity optional", "location", "relationship or action"],
+          "prompt_frame": "Create one candid instant-film snapshot using the supplied adult subject reference or references. Preserve each identity and the natural relationship between subjects. Use a thick asymmetric white instant-film border, hard on-camera flash, slightly overexposed foreground, warm faded color shift, fine grain, soft focus, and background falloff into shadow. Frame it like a spontaneous memory with a slightly imperfect crop and believable hand placement. Keep the environment simple and lived-in. No celebrity insertion unless explicitly supplied, no duplicate faces, no synthetic glamour retouching, and no watermark."
+        },
+        {
+          "id": "703",
+          "current_rank": 3,
+          "reference_id": "R028",
+          "name": "Multi-Era AI Yearbook Grid",
+          "formats": ["1:1", "4:5"],
+          "purpose": "Identity-led carousel hook, nostalgia post, team or creator series",
+          "tags": ["current", "yearbook", "decades", "identity consistency", "grid"],
+          "preview_hint": "The same identity appears across four period-correct school-photo eras with controlled changes to hair, wardrobe, backdrop, and print finish.",
+          "source_credit": "PonPon 2026 trend research",
+          "source_url": "https://ponpon.ai/blog/viral-ai-photo-trends-2026",
+          "reference_slots": ["clear face reference", "era list", "wardrobe direction", "background palette"],
+          "prompt_frame": "Create a clean 2x2 yearbook portrait grid showing the same supplied adult identity across four selected eras. Lock facial structure, skin tone, eye color, and recognizable features in every panel. Change only period-appropriate hair, grooming, wardrobe, mottled studio backdrop, lens softness, and print color response. Use a consistent chest-up pose and authentic school-photo key lighting. Keep each era distinct without parody. No school names, fake signatures, unreadable captions, identity drift, or watermark."
+        },
+        {
+          "id": "704",
+          "current_rank": 4,
+          "reference_id": "R029",
+          "name": "Cinematic Time Travel",
+          "formats": ["4:5", "9:16", "16:9"],
+          "purpose": "Immersive fashion, music, location, heritage, or personal-brand story",
+          "tags": ["current", "time travel", "period", "cinematic", "editorial"],
+          "preview_hint": "A modern subject is integrated into a specific decade with period-correct wardrobe, production design, camera response, and environmental lighting.",
+          "source_credit": "eWeek 2026 trend research",
+          "source_url": "https://www.eweek.com/news/ai-photo-editing-trends-2026/",
+          "reference_slots": ["subject identity", "target year and place", "wardrobe", "environment"],
+          "prompt_frame": "Place the supplied adult subject into a clearly named year and location. Preserve identity and body proportions while adapting wardrobe, hair, props, architecture, vehicles, practical lighting, lens character, film stock, and color response to that period. Integrate light and shadow across the subject and environment so the image feels photographed there, not composited. Use one decisive cinematic moment and a social-safe crop. Avoid era-mixing, modern objects, fake brand marks, unreadable signage, anatomy drift, and watermark."
+        },
+        {
+          "id": "705",
+          "current_rank": 5,
+          "reference_id": "R030",
+          "name": "Beautifully Imperfect Film Memory",
+          "formats": ["4:5", "1:1", "9:16"],
+          "purpose": "Authentic creator post, friendship memory, fashion recap, event photo",
+          "tags": ["current", "disposable camera", "film", "nostalgia", "unpolished"],
+          "preview_hint": "A messy, emotional consumer-film frame with edge crops, grain, uneven exposure, light leak, and just enough blur to feel real.",
+          "source_credit": "eWeek 2026 trend research",
+          "source_url": "https://www.eweek.com/news/ai-photo-editing-trends-2026/",
+          "reference_slots": ["subject or group", "event or location", "time of day", "wardrobe"],
+          "prompt_frame": "Turn the supplied adult subject or group into a late-1990s or early-2000s disposable-camera memory. Preserve identity while using off-center framing, one intentional edge crop, dusty film grain, tiny scratches, uneven exposure, mild red-eye where plausible, a single corner light leak, and slight movement blur. Mix available light with direct flash and keep expressions candid. The result should feel found in a photo envelope, not professionally art-directed. Avoid heavy beauty retouching, staged symmetry, duplicated limbs, fake logos, and watermark."
+        },
+        {
+          "id": "706",
+          "current_rank": 6,
+          "reference_id": "R031",
+          "name": "Scrapbook Digital Journal",
+          "formats": ["4:5", "1:1", "9:16"],
+          "purpose": "Travel, fashion recap, relationship, product story, or carousel cover",
+          "tags": ["current", "scrapbook", "journal", "collage", "tactile"],
+          "preview_hint": "A physical diary page scanned into the feed: layered photos, torn paper, tape, pressed objects, and one clear visual hierarchy.",
+          "source_credit": "eWeek 2026 trend research",
+          "source_url": "https://www.eweek.com/news/ai-photo-editing-trends-2026/",
+          "reference_slots": ["3-5 related photos", "subject identity", "story theme", "paper palette"],
+          "prompt_frame": "Build one tactile scrapbook journal page from the supplied subject, product, or campaign references. Use one dominant photograph and two or three supporting moments with consistent identity and product details. Layer torn paper, instant-photo borders, tape, ticket-like shapes, pressed botanicals, stamps, and restrained handwritten-mark textures with realistic paper depth and shadows. Keep the page readable at mobile size and leave a clean area for optional captioning. Do not invent readable handwriting, real ticket data, logos, duplicate faces, or watermark."
+        },
+        {
+          "id": "707",
+          "current_rank": 7,
+          "reference_id": "R032",
+          "name": "Faux Prestige Movie Poster",
+          "formats": ["4:5", "9:16", "16:9"],
+          "purpose": "Campaign reveal, event invitation, creator announcement, story hook",
+          "tags": ["current", "movie poster", "cinematic", "key art", "title"],
+          "preview_hint": "Everyday subject matter becomes controlled cinematic key art with one strong title, dramatic hierarchy, and poster-level color design.",
+          "source_credit": "eWeek 2026 trend research",
+          "source_url": "https://www.eweek.com/news/ai-photo-editing-trends-2026/",
+          "reference_slots": ["subject identity", "genre", "location", "exact short title"],
+          "prompt_frame": "Create fictional prestige movie key art using the supplied adult subject, product, or character. Preserve identity and build one clear genre moment with controlled cinematic lighting, subtle film grain, atmospheric depth, and calm negative space. Use only the supplied short title in a restrained, readable typographic position; add no critic quotes, studio marks, release date, or cast names unless exact copy is provided. Keep the image legible as a social thumbnail. Avoid copyrighted franchise styling, incoherent reflections, unreadable copy, and watermark."
+        },
+        {
+          "id": "708",
+          "current_rank": 8,
+          "reference_id": "R033",
+          "name": "Kinetic Motion-Blur Still",
+          "formats": ["4:5", "9:16", "16:9"],
+          "purpose": "Fashion, sport, music, automotive, or launch-energy post",
+          "tags": ["current", "motion blur", "kinetic", "fashion", "panning"],
+          "preview_hint": "The hero stays sharp while city lights, people, or action streak through the frame with believable slow-shutter camera physics.",
+          "source_credit": "eWeek 2026 trend research",
+          "source_url": "https://www.eweek.com/news/ai-photo-editing-trends-2026/",
+          "reference_slots": ["hero subject", "outfit or product", "moving environment", "lighting"],
+          "prompt_frame": "Create a kinetic slow-shutter photograph using the supplied adult subject, product, athlete, vehicle, or performer as the sharp visual anchor. Keep the hero face, body, product details, and contact points crisp while movement in the environment creates directional blur, light streaks, and subtle camera shake. Use realistic panning physics, integrated practical light, grounded feet or believable object contact, and a strong path through the frame. Do not blur the identity or product, duplicate limbs, float the subject, add logos, or add a watermark."
+        },
+        {
+          "id": "709",
+          "current_rank": 9,
+          "reference_id": "R034",
+          "name": "Y2K Mini-DV Freeze Frame",
+          "formats": ["4:5", "9:16", "1:1"],
+          "purpose": "Fashion recap, music culture, creator diary, behind-the-scenes post",
+          "tags": ["current", "Y2K", "camcorder", "mini-DV", "behind the scenes"],
+          "preview_hint": "A cool-toned handheld camcorder frame with interlaced texture, low-light sensor noise, fluorescent practicals, and unpolished proximity.",
+          "source_credit": "eWeek 2026 trend research",
+          "source_url": "https://www.eweek.com/news/ai-photo-editing-trends-2026/",
+          "reference_slots": ["subject identity", "wardrobe", "activity", "location"],
+          "prompt_frame": "Create an early-2000s mini-DV camcorder freeze-frame using the supplied adult subject or product references. Preserve identity, wardrobe, and key product details while using handheld shoulder-level framing, slight wide-angle distortion, interlaced scan texture, low-light sensor noise, cool white balance, clipped fluorescent highlights, and mild digital bloom. Capture a specific candid activity rather than a posed portrait. Leave room where a timestamp could sit but do not render one unless exact text is supplied. Avoid fake logos, identity drift, malformed hands, and watermark."
+        },
+        {
+          "id": "710",
+          "current_rank": 10,
+          "reference_id": "R035",
+          "name": "Consistent Character Micro-Story",
+          "formats": ["1:1", "4:5", "9:16"],
+          "purpose": "Four-beat brand story, mini comic, creator narrative, product journey",
+          "tags": ["current", "character consistency", "storytelling", "contact sheet", "sequence"],
+          "preview_hint": "One identity and one hero prop remain stable across four distinct shots that read as a complete beginning-to-payoff story.",
+          "source_credit": "eWeek 2026 trend research",
+          "source_url": "https://www.eweek.com/news/ai-photo-editing-trends-2026/",
+          "reference_slots": ["identity sheet", "hero product or prop", "four story beats", "environment"],
+          "prompt_frame": "Create a four-panel micro-story using the supplied adult identity, character, mascot, or product. Define four clear beats: setup, action, discovery or turn, and payoff. Lock the face, hair, body proportions, wardrobe, product shape, product color, and key accessories across every panel. Vary camera language intentionally with wide, medium, detail, and over-shoulder views while keeping lighting and location continuity. Make the sequence readable without captions. Avoid duplicate panels, identity drift, altered product graphics, malformed hands, unreadable text, and watermark."
+        }
+      ]
+    },
+    {
+      "id": "photoreal-candid",
+      "name": "Photoreal / Candid",
+      "trends": [
+        {
+          "id": "001",
+          "name": "Convenience Store Night Scene",
+          "formats": ["4:5", "16:9"],
+          "purpose": "Lifestyle realism, product-in-the-world, drop teaser",
+          "tags": ["night", "urban", "lifestyle", "candid", "viral"],
+          "preview_hint": "Grainy convenience store glass reflections, buzzing fluorescent lights, strangers walking past — the product lives inside that world like it belongs there.",
+          "reference_slots": ["product", "wardrobe", "environment", "lighting"],
+          "prompt_frame": "Create an ultra-realistic candid night scene outside a convenience store. Use the provided product/reference images as the visual anchor. Keep people ordinary and unposed, with believable glass reflections, street lighting, small environmental details, and a real pedestrian feel."
+        },
+        {
+          "id": "002",
+          "name": "RAW iPhone Subway Station",
+          "formats": ["9:16", "4:5"],
+          "purpose": "Candid vertical social content",
+          "tags": ["transit", "urban", "vertical", "candid", "gritty"],
+          "preview_hint": "Motion-blurred platform, yellow overhead lights, an accidental perfect frame — the kind of shot that actually goes viral on Twitter.",
+          "reference_slots": ["subject", "product", "transit environment"],
+          "prompt_frame": "Create a RAW, unprocessed iPhone-style subway station image with natural motion blur, imperfect framing, and realistic transit lighting. Integrate the supplied reference subject/product naturally."
+        },
+        {
+          "id": "003",
+          "name": "90s Point-and-Shoot Snapshot",
+          "formats": ["1:1", "4:5"],
+          "purpose": "Nostalgic casual post or lookbook",
+          "tags": ["retro", "film", "nostalgic", "flash", "casual"],
+          "preview_hint": "Direct flash, washed-out colors, someone cutting off at the frame edge — feels like it was found in a shoebox from 1996.",
+          "reference_slots": ["product", "pose", "color palette"],
+          "prompt_frame": "Create a 90s point-and-shoot camera snapshot with direct flash, slight color shift, casual composition, and natural imperfections. Use references for product, subject, and mood."
+        },
+        {
+          "id": "004",
+          "name": "Golden Hour Lifestyle Walk",
+          "formats": ["4:5", "9:16"],
+          "purpose": "Aspirational outdoor lifestyle or seasonal drop",
+          "tags": ["golden hour", "outdoor", "lifestyle", "warm", "editorial"],
+          "preview_hint": "Long shadows, backlit silhouette, warm amber tones — the kind of photo that makes people want to be wherever that is.",
+          "reference_slots": ["subject", "clothing", "location", "lighting direction"],
+          "prompt_frame": "Shoot a golden-hour lifestyle photo, backlit with warm amber sun 30 minutes before sunset. The subject is candid, mid-walk or mid-turn. Use reference images for clothing and subject. Location should feel real and aspirational — a wide street, park path, or rooftop. Emphasize rim lighting on the edges of the figure."
+        },
+        {
+          "id": "005",
+          "name": "Coffee Shop Window Seat",
+          "formats": ["4:5", "1:1"],
+          "purpose": "Cozy lifestyle content, product-in-hand shot",
+          "tags": ["interior", "cozy", "lifestyle", "cafe", "soft light"],
+          "preview_hint": "Diffused window light, steaming cup, soft depth-of-field on the background — calming and scroll-stopping at the same time.",
+          "reference_slots": ["product", "subject", "cup/drink", "window backdrop"],
+          "prompt_frame": "Create a realistic cafe window-seat scene with natural soft-box window light. The product or subject is on or near the table. Background has gentle bokeh of an active cafe. The mood is calm, slightly moody, and aspirational without feeling staged."
+        },
+        {
+          "id": "006",
+          "name": "Empire State Selfie",
+          "reference_id": "R036",
+          "formats": ["4:5", "9:16"],
+          "purpose": "Viral identity-transfer selfie on the Empire State Building maintenance platform — looks like a real leaked photo",
+          "tags": ["selfie", "iphone", "candid", "Empire State Building", "viral", "identity transfer", "photorealistic", "NYC"],
+          "preview_hint": "Two people on the Empire State Building's outdoor maintenance catwalk, holding a phone out at arm's length — wind-blown, cramped, no tourists, Manhattan spread out hundreds of feet below. Completely real-looking.",
+          "source_credit": "@getintoai",
+          "reference_slots": ["subject 1 identity (face/hair/proportions)", "subject 2 identity (optional)", "clothing direction"],
+          "prompt_frame": "iPhone front-camera selfie. Use the reference images only to preserve identity — facial features, hairstyle, body proportions. Do not copy clothing from references; dress subject(s) in casual street clothing appropriate for a cold windy day at height. Two people are taking a spontaneous selfie from the Empire State Building's narrow outdoor maintenance catwalk — the kind that wraps the building's upper spire, not the public observation deck. No other tourists or bystanders visible anywhere. One person holds the phone naturally at arm's length using the front camera; both subjects lean slightly toward each other and the camera, looking at the screen not the lens, relaxed expressions as if capturing a quick memory rather than posing. The Manhattan skyline is visible far below in the background, the catwalk railing or steel structure visible at the edge of frame. Authentic iPhone front-camera physics: 24–26mm equivalent ultra-wide lens, visible barrel distortion at frame edges, outstretched arm visible, natural hand position, imperfect framing, slight horizon tilt, casual crop, subtle finger shadow near one corner. Subtle HDR processing, slightly over-sharpened smartphone detail, realistic skin texture with visible pores and small imperfections, wind-affected hair and clothing wrinkles, harsh daylight with slightly lifted shadows, faint lens smudging, minimal digital noise, natural color science. Photorealistic, candid, not professional, not cinematic, not influencer-style — a believable snapshot that looks like it was posted straight from the camera roll."
+        }
+      ]
+    },
+    {
+      "id": "game-entertainment",
+      "name": "Game / Entertainment",
+      "trends": [
+        {
+          "id": "101",
+          "name": "Open-World Game Screenshot",
+          "formats": ["16:9"],
+          "purpose": "Cinematic fictional world or product placement",
+          "tags": ["gaming", "cinematic", "open world", "action", "fictional"],
+          "preview_hint": "Horizon of a mountain range, golden light on your character's back, a minimap in the corner — like a leaked screenshot from a game that doesn't exist yet.",
+          "reference_slots": ["product", "environment", "action moment"],
+          "prompt_frame": "Create a realistic open-world game screenshot inspired by a modern game capture. Include the reference product or subject as part of the world, with believable camera framing, environment detail, and optional subtle HUD elements."
+        },
+        {
+          "id": "102",
+          "name": "Retro Game Inventory Grid",
+          "formats": ["1:1", "4:5"],
+          "purpose": "Collection post, product lineup, icon set",
+          "tags": ["retro", "pixel", "gaming", "grid", "collection"],
+          "preview_hint": "8-bit item slots filled with your products reimagined as loot — each with a pixel art icon and cryptic label like 'Ghost Fang Hood [Rare]'.",
+          "reference_slots": ["product list", "labels", "pixel style"],
+          "prompt_frame": "Create one image containing a tidy grid of unique retro game inventory items. Use the supplied product references as inspiration, give each item a short meaningful label, and keep the layout clean enough for social viewing."
+        },
+        {
+          "id": "105",
+          "name": "Block-Based Voxel Brand World",
+          "formats": ["16:9", "4:5", "1:1"],
+          "purpose": "Playful game-world campaign scene, product world-building, brand environment post",
+          "tags": ["voxel", "minecraft-style", "gaming", "world-building", "brand", "pixel"],
+          "preview_hint": "A playable-looking cube world where the product, mascot, or brand becomes terrain, buildings, signs, statues, and little landmarks.",
+          "source_credit": "magiccreator-ai/awesome-gpt-image-2-prompts",
+          "reference_slots": ["brand or product", "environment theme", "color palette", "landmark or mascot"],
+          "prompt_frame": "Create a block-based voxel world inspired by the supplied brand, product, character, place, or campaign. Build a playable-looking biome from cube blocks with terrain, trees, water, paths, buildings, signs, statues, or product landmarks translated into pixel-art structures. Preserve the subject's recognizable colors, motifs, and mood while keeping the scene original, immersive, and readable at social-media size. Avoid using protected game logos, exact game UI, copyrighted characters, or marketplace claims unless explicitly provided."
+        },
+        {
+          "id": "103",
+          "name": "Anime Scene Screenshot",
+          "formats": ["16:9", "4:5"],
+          "purpose": "Fan-culture hook, character or brand identity post",
+          "tags": ["anime", "illustration", "character", "cinematic", "manga"],
+          "preview_hint": "A frame that looks ripped straight from a prestige anime series — dynamic lighting, expressive character, speed lines if warranted.",
+          "reference_slots": ["character or subject", "outfit", "environment", "emotion"],
+          "prompt_frame": "Create a still frame from an anime series in the style of a prestige modern anime. Use the supplied character or subject reference, incorporate the outfit. The scene should have dynamic lighting, expressive emotion, and the kind of cinematic framing used in key episode moments."
+        },
+        {
+          "id": "104",
+          "name": "GTA VI Loading Screen Portrait",
+          "reference_id": "R037",
+          "formats": ["4:5", "9:16"],
+          "purpose": "Transform a reference photo into official-quality GTA VI loading screen commercial art",
+          "tags": ["GTA", "gaming", "Vice City", "portrait", "illustration", "identity transfer", "viral", "cinematic"],
+          "preview_hint": "Your photo, but you're a Rockstar Games character — Vice City palette, cinematic rim light, the background evolved into the world without losing its bones.",
+          "source_credit": "@getintoai",
+          "reference_slots": ["subject photo", "background location", "clothing override (optional)"],
+          "prompt_frame": "Transform the uploaded reference photo into a high-end commercial illustration inspired by the promotional loading screen artwork of Grand Theft Auto VI and Grand Theft Auto: Vice City. Preserve the exact identity, pose, facial features, clothing, accessories, hairstyle, camera angle, and overall composition of the original photo — do not alter the person. Reimagine the existing background rather than replacing it: keep the original location immediately recognizable by preserving its layout, perspective, architecture, streets, natural features, landmarks, and overall atmosphere. Reinterpret the environment as if it exists naturally within the world of GTA VI's Vice City — enhance it with richer visual storytelling, more stylized architecture, cinematic lighting, refined environmental details, vibrant colors, subtle signage, atmospheric depth, and immersive world-building while respecting the purpose and character of the original location. Add vehicles, pedestrians, storefronts, vegetation, palm trees, street furniture, neon lighting, luxury details, or urban activity only where they naturally belong. If the original scene is residential, rural, industrial, mountainous, indoors, or otherwise quiet and unsuited to traffic or crowds, do not introduce unnecessary cars, palm trees, pedestrians, or city elements — every environmental addition must feel like a believable evolution of the original scene, not a replacement. Illustrate using the iconic GTA VI commercial art style: photorealistic base with subtle stylization, vibrant cinematic color grading, deep contrast, warm Vice City palette (sunset oranges, hot pinks, ocean teals, deep purples), heightened detail on clothing and accessories, slight painterly texture in shadow regions, cinematic rim lighting on the figure. The result should feel like official Rockstar Games promotional key art — a loading screen poster, not fan art."
+        }
+      ]
+    },
+    {
+      "id": "social-ui",
+      "name": "Social / UI",
+      "trends": [
+        {
+          "id": "201",
+          "name": "TikTok / Reels Live Screenshot",
+          "formats": ["9:16"],
+          "purpose": "Vertical social proof or creator-style post",
+          "tags": ["tiktok", "social", "live", "vertical", "ui"],
+          "preview_hint": "Looks exactly like a real live stream — comment fire emojis flying, viewer count climbing, your product front and center.",
+          "reference_slots": ["subject", "product", "comments", "overlay text"],
+          "prompt_frame": "Create a realistic vertical live-stream screenshot with native-looking social UI, believable comments, and a subject or product based on the references. Keep the interface readable and platform-like without using real protected logos."
+        },
+        {
+          "id": "202",
+          "name": "Historical Figure Social Feed",
+          "formats": ["9:16", "4:5"],
+          "purpose": "Meme, parody, educational humor",
+          "tags": ["meme", "parody", "humor", "historical", "viral"],
+          "preview_hint": "Napoleon posting a selfie. Da Vinci sharing a WIP. The anachronism is the whole joke — and it always lands.",
+          "reference_slots": ["figure", "platform behavior", "punchline"],
+          "prompt_frame": "Create a fictional social media feed screenshot where a historical or fictional public-domain figure posts during a recognizable moment. Blend period details with modern interface behavior and a clear punchline."
+        },
+        {
+          "id": "203",
+          "name": "Viral Reddit Thread",
+          "formats": ["9:16", "4:5"],
+          "purpose": "Engagement bait, comment-style humor post",
+          "tags": ["reddit", "meme", "social", "text", "humor"],
+          "preview_hint": "A perfectly timed top comment, the OP's absurd setup, the upvote count that signals mass agreement — screen-grabbed and cropped exactly right.",
+          "reference_slots": ["post topic", "punchline comment", "subreddit name", "upvote range"],
+          "prompt_frame": "Create a realistic Reddit thread screenshot with a believable subreddit, an OP post or image, and a top comment that delivers the punchline. Style it like a real mobile screen grab. Do not use copyrighted usernames or actual real user content."
+        }
+      ]
+    },
+    {
+      "id": "poster-typography",
+      "name": "Poster / Typography",
+      "trends": [
+        {
+          "id": "301",
+          "name": "Micro Typography Object Shot",
+          "formats": ["1:1"],
+          "purpose": "Curiosity hook or visual stunt",
+          "tags": ["macro", "typography", "stunt", "object", "detail"],
+          "preview_hint": "Text you have to squint to read — engraved into an eraser, printed on a grain of rice, carved into a pencil tip. The comment section always goes wild.",
+          "reference_slots": ["object", "exact text"],
+          "prompt_frame": "Create a macro object photograph where a tiny piece of exact text appears on one small surface. Keep the text short, legible, surprising, and integrated into the object."
+        },
+        {
+          "id": "302",
+          "name": "Editorial Drop Poster",
+          "formats": ["4:5", "9:16"],
+          "purpose": "Campaign announcement or hero post",
+          "tags": ["editorial", "poster", "campaign", "fashion", "drop"],
+          "preview_hint": "A billboard you'd actually stop and look at — bold product image, restrained headline, the negative space doing half the work.",
+          "reference_slots": ["product", "brand palette", "exact headline"],
+          "prompt_frame": "Create an editorial campaign poster using the product references, strong photographic composition, restrained typography, and a clear social-media-safe crop."
+        },
+        {
+          "id": "303",
+          "name": "Brutalist Concert Poster",
+          "formats": ["4:5", "1:1"],
+          "purpose": "Event hype, drop announcement, music-adjacent brand post",
+          "tags": ["brutalist", "typography", "poster", "bold", "music"],
+          "preview_hint": "Max-contrast, raw grid, huge block type — looks like it was printed on a Risograph at 3am and slapped on a telephone pole.",
+          "reference_slots": ["headline text", "supporting info", "color palette", "imagery"],
+          "prompt_frame": "Create a brutalist-style event poster with heavy bold typography, stark two-or-three-color palette, raw grid layout, and a gritty printed feel. Incorporate the supplied text hierarchy and any reference imagery. The aesthetic should feel urgent and underground."
+        },
+        {
+          "id": "304",
+          "name": "Luxury Magazine Spread",
+          "formats": ["16:9", "4:5"],
+          "purpose": "High-fashion product or brand positioning",
+          "tags": ["luxury", "fashion", "editorial", "magazine", "clean"],
+          "preview_hint": "Shot like a Vogue spread — one dominant image, the brand name in a whisper, the white space louder than the words.",
+          "reference_slots": ["product", "model or subject", "headline", "brand palette"],
+          "prompt_frame": "Create a luxury fashion magazine editorial spread. Use the supplied product or subject reference. Typography should be minimal — one headline, possibly a caption. The composition should feel intentionally considered: clean, aspirational, and as if it cost a lot to produce."
+        }
+      ]
+    },
+    {
+      "id": "fashion-apparel",
+      "name": "Fashion / Apparel Model",
+      "trends": [
+        {
+          "id": "401",
+          "name": "Lookbook Studio Portrait",
+          "formats": ["4:5", "1:1"],
+          "purpose": "Clean product-first fashion shot for shop listings or campaign",
+          "tags": ["lookbook", "studio", "model", "clothing", "clean", "apparel"],
+          "preview_hint": "White seamless or gradient backdrop, studio strobes, the garment is the hero — shot like a brand you respect actually made it.",
+          "reference_slots": ["clothing_product", "model_reference", "pose_reference", "backdrop_color"],
+          "prompt_frame": "Create a professional lookbook studio portrait. Use the supplied clothing product image as the exact garment on the model. Match the model reference if provided, or use a natural, diverse model. Apply the pose reference if supplied. Backdrop should be clean: white seamless, soft grey, or gradient. Studio lighting should be flattering and apparel-forward — the garment must be clearly visible, unwrinkled, and accurately represented. Multiple views (front, 3/4) in a collage format are acceptable."
+        },
+        {
+          "id": "402",
+          "name": "Street Style Paparazzi",
+          "formats": ["4:5", "9:16"],
+          "purpose": "Viral candid-style clothing showcase, social proof aesthetic",
+          "tags": ["street style", "candid", "model", "clothing", "urban", "fashion"],
+          "preview_hint": "Caught off-guard mid-stride on a real street — the outfit styled up but the moment feels completely unplanned. The kind of shot that gets re-posted.",
+          "reference_slots": ["clothing_product", "model_reference", "pose_reference", "environment"],
+          "prompt_frame": "Create a street-style paparazzi-style fashion photograph. The model appears caught mid-movement on a real street or urban environment — not posing for the camera. Use the supplied clothing product on the model, styled naturally with believable accessories. Apply model and pose references if provided. The environment should feel like a real city: sidewalk, crosswalk, building facade, or alley. Lighting should be natural: overcast, golden hour, or dappled. The crop is tight but not claustrophobic, as if shot from across the street with a long lens."
+        },
+        {
+          "id": "403",
+          "name": "Model Trio: 3 Poses Grid",
+          "formats": ["4:5", "1:1"],
+          "purpose": "Show all angles of a single garment in one post",
+          "tags": ["model", "clothing", "grid", "multi-pose", "apparel", "lookbook"],
+          "preview_hint": "Front. Side. Back. Same fit, same model, three frames — everything a buyer needs to see laid out in one swipeable panel.",
+          "reference_slots": ["clothing_product", "model_reference", "background", "lighting mood"],
+          "prompt_frame": "Create a clean three-panel model photograph grid showing the same garment from three angles: front, three-quarter, and back (or front / side / detail). The model and outfit must remain consistent across all panels. Use the clothing product reference as the exact garment. Lighting and background should match across all three. Lay the panels side by side or in a 3×1 grid. The result should function as a complete product shot."
+        },
+        {
+          "id": "404",
+          "name": "Urban Lifestyle Wear",
+          "formats": ["4:5", "9:16", "16:9"],
+          "purpose": "Aspirational lifestyle post anchored by the clothing product",
+          "tags": ["urban", "lifestyle", "clothing", "model", "editorial", "environment"],
+          "preview_hint": "Rooftop. Alley mural. Fire escape. The city is the backdrop and the outfit ties the whole scene together.",
+          "reference_slots": ["clothing_product", "model_reference", "pose_reference", "environment"],
+          "prompt_frame": "Create an urban lifestyle editorial photograph with the supplied clothing product as the hero. Place the model in an aspirational city environment: rooftop with skyline, painted alley, stairwell with texture, or a minimalist parking structure. Use the model and pose references if supplied. The environment should feel earned — real location-scouting energy — not a generic stock backdrop. Natural light or motivated artificial light (street lamp, neon, headlights). The clothing must be clearly visible and styled intentionally."
+        },
+        {
+          "id": "405",
+          "name": "Flat Lay Product Knolling",
+          "formats": ["1:1", "4:5"],
+          "purpose": "Overhead outfit or product composition, unboxing-adjacent post",
+          "tags": ["flat lay", "overhead", "knolling", "product", "clothing", "layout"],
+          "preview_hint": "Everything perfectly parallel, everything casting the same shadow — the garment laid out beside the things that go with it, shot from directly above.",
+          "reference_slots": ["clothing_product", "accessories", "surface_texture", "color_palette"],
+          "prompt_frame": "Create an overhead flat-lay knolling photograph. The primary item is the supplied clothing product, laid flat and smoothed. Surround it with complementary items: accessories, packaging, lifestyle props that match the brand vibe. Arrange everything parallel and evenly spaced on the supplied or implied surface (marble, wood, concrete, linen). Overhead single-light or diffused natural light. No model. The composition should feel curated but not sterile."
+        }
+      ]
+    },
+    {
+      "id": "ai-aesthetics",
+      "name": "AI Aesthetics",
+      "trends": [
+        {
+          "id": "501",
+          "name": "Claymorphism Scene",
+          "formats": ["1:1", "4:5"],
+          "purpose": "Playful product or brand identity post, highly shareable",
+          "tags": ["clay", "3D", "cute", "surreal", "viral", "ai aesthetic"],
+          "preview_hint": "Everything round and pastel and slightly squishy — your product reimagined in clay, sitting in a tiny handmade world. Irresistibly shareable.",
+          "reference_slots": ["subject or product", "environment", "color palette"],
+          "prompt_frame": "Create a claymation-style scene with soft, rounded, physically-touchable objects. Everything has a slightly matte clay texture, subtle fingerprint marks, and warm diffused lighting as if the scene lives inside a lightbox. Reimagine the supplied product or subject in this material language. Keep proportions slightly exaggerated and the palette warm."
+        },
+        {
+          "id": "502",
+          "name": "Ghibli-Style Environment",
+          "formats": ["16:9", "4:5"],
+          "purpose": "Dreamy lifestyle content or brand world-building",
+          "tags": ["ghibli", "anime", "painterly", "dreamy", "illustrated"],
+          "preview_hint": "Lush painterly backgrounds, the kind of afternoon light that feels like a memory — if Studio Ghibli made a short film set in your world.",
+          "reference_slots": ["environment", "subject or character", "season or time of day"],
+          "prompt_frame": "Create a painterly animated environment scene inspired by the visual language of prestige Japanese animation studios. Use soft, luminous backgrounds with hand-painted quality. Include natural elements — wind in grass, light through leaves, reflective water. If a subject or character reference is supplied, include them in the scene. The overall mood should feel nostalgic, warm, and slightly magical."
+        },
+        {
+          "id": "503",
+          "name": "Y2K Digital Aesthetic",
+          "formats": ["1:1", "4:5"],
+          "purpose": "Nostalgia hook, brand throwback, Gen-Z engagement",
+          "tags": ["y2k", "retro", "digital", "chrome", "nostalgia", "2000s"],
+          "preview_hint": "Chrome text, lens flare, pixel hearts, and a color palette straight off a 2003 Motorola wallpaper. The internet loves when this comes back.",
+          "reference_slots": ["subject or product", "text overlay", "color mood"],
+          "prompt_frame": "Create an image in the Y2K early-2000s digital aesthetic. Use chrome or holographic text effects, heavy lens flares, pixel decorations, low-polygon 3D elements, and a glossy hyper-saturated color palette. Integrate the supplied subject or product into this digital world. The overall feel should be like a Myspace banner or early Flash website from 2002–2006."
+        },
+        {
+          "id": "504",
+          "name": "Dark Fantasy Concept Art",
+          "formats": ["4:5", "16:9"],
+          "purpose": "High-impact hero image, collector/drop energy",
+          "tags": ["dark fantasy", "concept art", "illustration", "dramatic", "cinematic"],
+          "preview_hint": "Like a piece of art that ships with the collector's edition — dark, textured, lit from below, the kind of image that makes people ask who made it.",
+          "reference_slots": ["character or subject", "environment", "mood or color palette"],
+          "prompt_frame": "Create a cinematic dark fantasy concept art piece. Dramatic underlighting or volumetric light shafts, deep shadow, rich texture on every surface. If a character or subject reference is supplied, render them in this visual language. The environment should feel ancient, mythic, or post-apocalyptic. Color palette: deep teals, burnt oranges, near-blacks with one hero light source."
+        },
+        {
+          "id": "505",
+          "name": "Soft Pastel Dreamscape",
+          "formats": ["1:1", "4:5"],
+          "purpose": "Calm, aesthetic post — high saves and shares",
+          "tags": ["pastel", "dreamy", "soft", "aesthetic", "saves", "illustrated"],
+          "preview_hint": "Clouds you want to fall into, colors that don't exist in real life, a stillness that makes people pause their scroll.",
+          "reference_slots": ["subject or product", "mood", "color palette"],
+          "prompt_frame": "Create a dreamy pastel surrealist scene with a soft, ethereal quality — weightless clouds, luminous gradients, gentle floating objects. Incorporate the supplied subject or product as a natural element of this world. Colors should be muted lavenders, soft corals, sky blues, and creams. The overall tone should feel peaceful and slightly otherworldly."
+        }
+      ]
+    },
+    {
+      "id": "automotive-photography",
+      "name": "Automotive Photography",
+      "trends": [
+        {
+          "id": "801",
+          "reference_id": "R038",
+          "name": "Showroom Clean",
+          "formats": ["16:9", "4:5", "1:1"],
+          "purpose": "Full professional retouch with a neutral, accurate grade — the standard for manufacturer press and dealer imagery",
+          "tags": ["automotive", "car", "retouch", "showroom", "clean", "neutral", "press"],
+          "preview_hint": "Every scratch gone, every reflection cleaned up, paint color exactly accurate — the car looks like it rolled out of the studio for a brochure shoot.",
+          "reference_slots": ["car_photo"],
+          "prompt_frame": "Perform a full editorial retouch on this car photograph as a professional automotive retoucher. Exposure and color: correct white balance to neutral, set accurate exposure, recover highlight detail in the paint, and lift shadow detail without flattening contrast. Paint and panels: remove reflections of the photographer, light stands, and surrounding clutter from the body panels while preserving natural environment reflections that define the car's shape; smooth panels to clean gradients; eliminate dust, water spots, and minor scratches. Detail pass: clean brake dust from wheel barrels, deepen tire black, clarify headlight and taillight lenses, and polish chrome and brightwork. Scene cleanup: remove trash, cones, poles, stray vehicles, and people from the background without altering the location; repair pavement blemishes under and around the car. Final grade — Showroom Clean: neutral whites, accurate paint color, crisp micro-contrast, zero color cast, low grain — the result should look like manufacturer press photography. Preserve the original car exactly: same body shape, proportions, wheels, badges, paint color, license plate, camera angle, focal length, composition, and crop. Do not add, remove, move, or reshape any object. This is a retouch of the supplied photo, not a new image."
+        },
+        {
+          "id": "802",
+          "reference_id": "R039",
+          "name": "Golden Hour Warm",
+          "formats": ["16:9", "4:5", "1:1"],
+          "purpose": "Full retouch with a warm cinematic grade — makes any car shot feel like it was captured in perfect golden-hour light",
+          "tags": ["automotive", "car", "retouch", "golden hour", "warm", "cinematic", "lifestyle"],
+          "preview_hint": "Amber highlights, soft magenta shadows, gentle specular bloom — the car feels like it was shot at sunset even if it wasn't.",
+          "reference_slots": ["car_photo"],
+          "prompt_frame": "Perform a full editorial retouch on this car photograph as a professional automotive retoucher. Exposure and color: correct white balance and exposure, recover highlight detail in the paint, and lift shadow detail without flattening contrast. Paint and panels: remove reflections of the photographer, light stands, and surrounding clutter from the body panels while preserving natural environment reflections that define the car's shape; smooth panels to clean gradients; eliminate dust, water spots, and minor scratches. Detail pass: clean brake dust from wheel barrels, deepen tire black, clarify headlight and taillight lenses, and polish chrome and brightwork. Scene cleanup: remove trash, cones, poles, stray vehicles, and people from the background without altering the location; repair pavement blemishes under and around the car. Final grade — Golden Hour Warm: push highlights toward amber-orange, introduce a soft magenta bias in the shadows, add gentle bloom on specular reflections, lift midtones slightly, and warm the overall color temperature as if the last 30 minutes of sunlight are hitting the car. Preserve the original car exactly: same body shape, proportions, wheels, badges, paint color, license plate, camera angle, focal length, composition, and crop. Do not add, remove, move, or reshape any object. This is a retouch of the supplied photo, not a new image."
+        },
+        {
+          "id": "803",
+          "reference_id": "R040",
+          "name": "Moody Editorial",
+          "formats": ["16:9", "4:5", "1:1"],
+          "purpose": "Full retouch with a dark teal-and-neutral cinematic grade — the look of automotive magazine editorial and high-end influencer posts",
+          "tags": ["automotive", "car", "retouch", "moody", "editorial", "cinematic", "dark", "magazine"],
+          "preview_hint": "Deep blacks, cool teal shadows, near-neutral highlights, pulled saturation — the kind of automotive shot you'd see in a car magazine double-page spread.",
+          "reference_slots": ["car_photo"],
+          "prompt_frame": "Perform a full editorial retouch on this car photograph as a professional automotive retoucher. Exposure and color: correct white balance and exposure, recover highlight detail in the paint, and lift shadow detail without flattening contrast. Paint and panels: remove reflections of the photographer, light stands, and surrounding clutter from the body panels while preserving natural environment reflections that define the car's shape; smooth panels to clean gradients; eliminate dust, water spots, and minor scratches. Detail pass: clean brake dust from wheel barrels, deepen tire black, clarify headlight and taillight lenses, and polish chrome and brightwork. Scene cleanup: remove trash, cones, poles, stray vehicles, and people from the background without altering the location; repair pavement blemishes under and around the car. Final grade — Moody Editorial: crush the blacks deep, cool the shadows toward teal, keep highlights near neutral or slightly cool, pull saturation back across the image while allowing one accent color to remain slightly more saturated, apply a cinematic contrast curve. Preserve the original car exactly: same body shape, proportions, wheels, badges, paint color, license plate, camera angle, focal length, composition, and crop. Do not add, remove, move, or reshape any object. This is a retouch of the supplied photo, not a new image."
+        },
+        {
+          "id": "804",
+          "reference_id": "R041",
+          "name": "Matte Luxury",
+          "formats": ["16:9", "4:5", "1:1"],
+          "purpose": "Full retouch with a matte, faded luxury grade — premium and restrained, mirrors the aesthetic of matte-painted vehicles",
+          "tags": ["automotive", "car", "retouch", "matte", "luxury", "fade", "premium", "lifestyle"],
+          "preview_hint": "Blacks lifted just off the floor, saturation pulled back to velvet, clarity reduced for a tactile softness — feels expensive without trying.",
+          "reference_slots": ["car_photo"],
+          "prompt_frame": "Perform a full editorial retouch on this car photograph as a professional automotive retoucher. Exposure and color: correct white balance and exposure, recover highlight detail in the paint, and lift shadow detail without flattening contrast. Paint and panels: remove reflections of the photographer, light stands, and surrounding clutter from the body panels while preserving natural environment reflections that define the car's shape; smooth panels to clean gradients; eliminate dust, water spots, and minor scratches. Detail pass: clean brake dust from wheel barrels, deepen tire black, clarify headlight and taillight lenses, and polish chrome and brightwork. Scene cleanup: remove trash, cones, poles, stray vehicles, and people from the background without altering the location; repair pavement blemishes under and around the car. Final grade — Matte Luxury: lift blacks slightly so they never fully crush, pull saturation back to a velvety muted palette, reduce clarity slightly for a soft tactile finish, use a warm-neutral bias in the midtones. Preserve the original car exactly: same body shape, proportions, wheels, badges, paint color, license plate, camera angle, focal length, composition, and crop. Do not add, remove, move, or reshape any object. This is a retouch of the supplied photo, not a new image."
+        },
+        {
+          "id": "805",
+          "reference_id": "R042",
+          "name": "Night Urban",
+          "formats": ["16:9", "4:5", "1:1"],
+          "purpose": "Full retouch with a night/neon cinematic grade — designed for cars photographed in urban nighttime environments",
+          "tags": ["automotive", "car", "retouch", "night", "urban", "neon", "city", "cinematic"],
+          "preview_hint": "Lifted cool blacks, practical light sources enhanced, neon colors in the paint preserved and deepened — city at night, car as the star.",
+          "reference_slots": ["car_photo"],
+          "prompt_frame": "Perform a full editorial retouch on this car photograph as a professional automotive retoucher. Exposure and color: correct white balance and exposure, recover highlight detail in the paint, and lift shadow detail without flattening contrast. Paint and panels: remove reflections of the photographer, light stands, and surrounding clutter from the body panels while preserving and enhancing the neon and artificial light reflections naturally present in the scene; smooth panels to clean gradients; eliminate dust and minor scratches. Detail pass: clean brake dust from wheel barrels, deepen tire black, clarify headlight and taillight lenses, polish chrome and brightwork, and enhance practical light sources already in the scene. Scene cleanup: remove distracting background elements without altering the urban location; repair pavement blemishes. Final grade — Night Urban: lift blacks slightly into a cool lifted base, separate cool shadows from warm highlights where warm practical lights exist, apply controlled bloom on streetlights and headlights already in the frame, and preserve the color of neon and artificial sources already reflected in the paint. Do not add light sources that were not there. Preserve the original car exactly: same body shape, proportions, wheels, badges, paint color, license plate, camera angle, focal length, composition, and crop. Do not add, remove, move, or reshape any object. This is a retouch of the supplied photo, not a new image."
+        }
+      ]
+    },
+    {
+      "id": "product-showcase",
+      "name": "Product Showcase",
+      "trends": [
+        {
+          "id": "601",
+          "name": "Floating Product Gradient Hero",
+          "formats": ["1:1", "4:5"],
+          "purpose": "Clean hero product shot, ad-ready",
+          "tags": ["product", "floating", "gradient", "clean", "ad ready"],
+          "preview_hint": "Product levitating at the perfect angle, drop shadow, gradient behind it — the kind of image you'd see in a paid social ad that actually converts.",
+          "reference_slots": ["product", "color palette", "shadow style"],
+          "prompt_frame": "Create a clean product hero shot with the supplied product floating at a slightly angled perspective. Background is a smooth gradient that complements the product's color palette. Realistic drop shadow beneath. Studio-quality lighting. No clutter. The product occupies roughly 60% of the frame."
+        },
+        {
+          "id": "602",
+          "name": "Neon-Lit Night Product",
+          "formats": ["1:1", "4:5"],
+          "purpose": "After-dark brand energy, nightlife-adjacent drops",
+          "tags": ["neon", "night", "product", "moody", "urban"],
+          "preview_hint": "The product bathed in pink and blue neon reflections, wet concrete beneath, like it belongs in a Tokyo convenience store at midnight.",
+          "reference_slots": ["product", "neon colors", "environment surface"],
+          "prompt_frame": "Create a moody night product photograph with neon light as the primary illumination. The product sits on a dark reflective surface — wet concrete, glass shelf, polished metal. Neon colors (pink, teal, purple, amber) cast on the product from implied off-camera signs. Atmospheric: slightly hazy, high contrast, dark surroundings."
+        },
+        {
+          "id": "603",
+          "name": "Luxury Unboxing Flat Lay",
+          "formats": ["1:1", "4:5"],
+          "purpose": "Premium packaging reveal, launch week content",
+          "tags": ["unboxing", "luxury", "flat lay", "packaging", "launch"],
+          "preview_hint": "Tissue paper pulled back just enough, a thank-you card at an angle, the product centered and pristine — the perfect unboxing post that gets saved.",
+          "reference_slots": ["product", "packaging", "surface", "extras"],
+          "prompt_frame": "Create an overhead luxury unboxing flat lay. The product is centered, partially revealed from premium packaging — tissue paper, ribbons, or a branded box open at an angle. Include complementary items: thank-you card, sticker, optional small extras. Surface should feel premium (marble, linen, dark wood). Lighting is soft and even. The image should feel like the best version of receiving something in the mail."
+        }
+      ]
+    }
+  ]
+}
