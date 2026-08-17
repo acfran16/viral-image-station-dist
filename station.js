@@ -3,7 +3,7 @@ import { mountGallery, refreshCampaigns } from "./js/gallery.js";
 import { mountWizard } from "./js/wizard.js";
 import { mountDetail } from "./js/detail.js";
 import { mountCatalog } from "./js/catalog.js";
-import { promptRulePresets } from "./js/station-config.js";
+import { automotiveRetouchVariants, promptRulePresets } from "./js/station-config.js";
 
 const app = document.querySelector("#app");
 
@@ -37,7 +37,7 @@ async function boot() {
         trendsResponse.json(),
         variantsResponse.json(),
       ]);
-      ctx.config = { library, trends, variants: variants.outputs, promptRules: promptRulePresets, campaigns: [] };
+      ctx.config = { library, trends, variants: variants.outputs, retouchVariants: automotiveRetouchVariants, promptRules: promptRulePresets, campaigns: [] };
       ctx.mode = "hosted";
     }
     window.__stationMode = ctx.mode;

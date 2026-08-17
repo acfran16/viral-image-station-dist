@@ -13,7 +13,7 @@ import { createHostedCampaign } from "./hosted.js";
 const steps = [
   { name: "Setup", detail: "Name, type and goal", mobile: "Setup" },
   { name: "Direction", detail: "Trend, references, mood", mobile: "Direction" },
-  { name: "Outputs", detail: "Variants 001-008", mobile: "Outputs" },
+  { name: "Outputs", detail: "Variant pack", mobile: "Outputs" },
   { name: "References", detail: "Role-aware uploads", mobile: "References" },
   { name: "Review", detail: "Review and create", mobile: "Review" },
 ];
@@ -79,6 +79,18 @@ const campaignTypes = [
     ],
   },
   {
+    id: "automotive-retouch",
+    name: "Automotive retouch",
+    defaultGroup: "current-trends",
+    defaultReferenceId: "R033",
+    roles: [
+      role("primary", "Source vehicle photo", "Upload the original vehicle photo to preserve and enhance.", "required"),
+      role("style", "Grade / finish reference", "Optional color grade, lighting, or retouch finish reference.", "optional"),
+      role("environment", "Scene cleanup reference", "Optional location or background-cleanup direction.", "optional"),
+      role("composition", "Detail reference", "Optional wheel, glass, reflection, or detail target.", "optional"),
+    ],
+  },
+  {
     id: "general",
     name: "General social pack",
     defaultGroup: "social-ui",
@@ -130,6 +142,16 @@ function freshForm() {
     variants: new Set(["001", "002", "003", "004", "005", "006", "007", "008"]),
     files: {},
   };
+}
+
+function isAutomotiveRetouch() {
+  return state.form.type === "automotive-retouch";
+}
+
+function currentVariants() {
+  return isAutomotiveRetouch()
+    ? config().retouchVariants ?? config().variants
+    : config().variants;
 }
 
 export function mountWizard(mountPoint, context) {
@@ -559,15 +581,16 @@ function renderReferenceModal(id) {
 }
 
 function renderOutputs() {
+  const variants = currentVariants();
   return `
     ${heading("Select output variants")}
-    <p class="section-intro">Choose one asset for a quick test or the complete eight-format social pack.</p>
+    <p class="section-intro">${isAutomotiveRetouch() ? "Choose one retouch pass for a quick test or the complete automotive enhancement pack." : "Choose one asset for a quick test or the complete eight-format social pack."}</p>
     <div class="variant-toolbar">
       <span class="field-label">${state.form.variants.size} selected</span>
-      <button class="text-button" id="toggle-all" type="button">${state.form.variants.size === config().variants.length ? "Clear all" : "Select all"}</button>
+      <button class="text-button" id="toggle-all" type="button">${state.form.variants.size === variants.length ? "Clear all" : "Select all"}</button>
     </div>
     <div class="variant-list">
-      ${config().variants.map((variant) => `
+      ${variants.map((variant) => `
         <label class="variant-row ${state.form.variants.has(variant.number) ? "selected" : ""}">
           <input type="checkbox" name="variant" value="${variant.number}" ${state.form.variants.has(variant.number) ? "checked" : ""}>
           <span class="variant-number">${variant.number}</span>
@@ -585,14 +608,14 @@ function renderReferences() {
   const requiredRole = type.roles.find((item) => item.level === "required");
   return `
     ${heading("Add references")}
-    <p class="section-intro">Use the selected catalog image for the required role, or replace it with your own upload. Recommended and optional references can be added later.</p>
-    <label class="catalog-subject-option">
+    <p class="section-intro">${isAutomotiveRetouch() ? "Upload the original vehicle photo. Every selected retouch variant uses this file as the locked source image." : "Use the selected catalog image for the required role, or replace it with your own upload. Recommended and optional references can be added later."}</p>
+    ${isAutomotiveRetouch() ? "" : `<label class="catalog-subject-option">
       <input id="catalog-as-subject" type="checkbox" ${state.form.catalogAsSubject ? "checked" : ""}>
       <span>
         <strong>Use ${references[0]?.id || "selected reference"} as ${requiredRole.label.toLowerCase()}</strong>
         <small>Use the first selected catalog image for the required role. Upload below to replace it with your own subject.</small>
       </span>
-    </label>
+    </label>`}
     <div class="upload-list">
       ${type.roles.map((item) => renderUploadRole(item)).join("")}
     </div>
@@ -635,7 +658,7 @@ function renderUploadRole(item) {
 function renderReview() {
   const type = currentType();
   const trend = selectedTrend();
-  const selectedVariants = config().variants.filter((item) => state.form.variants.has(item.number));
+  const selectedVariants = currentVariants().filter((item) => state.form.variants.has(item.number));
   const files = type.roles.filter((item) => state.form.files[item.id]);
   return `
     ${heading("Review and create")}
@@ -778,7 +801,12 @@ function bindSetup() {
     input.addEventListener("change", () => {
       state.form.type = input.value;
       state.form.groupId = currentType().defaultGroup;
-      state.form.referenceIds = new Set([currentGroup().references[0].id]);
+      state.form.referenceIds = new Set([currentType().defaultReferenceId || currentGroup().references[0].id]);
+      state.form.catalogAsSubject = !isAutomotiveRetouch();
+      state.form.promptRuleIds = isAutomotiveRetouch()
+        ? new Set(["vehicle-preservation", "no-vehicle-redesign", "natural-automotive-retouch"])
+        : new Set(["product-accuracy-priority", "integrated-lighting", "avoid-anatomy-risk"]);
+      state.form.variants = new Set(currentVariants().map((item) => item.number));
       state.form.files = {};
       render();
     });
@@ -886,9 +914,10 @@ function bindDirection() {
 
 function bindOutputs() {
   app.querySelector("#toggle-all").addEventListener("click", () => {
-    state.form.variants = state.form.variants.size === config().variants.length
+    const variants = currentVariants();
+    state.form.variants = state.form.variants.size === variants.length
       ? new Set()
-      : new Set(config().variants.map((item) => item.number));
+      : new Set(variants.map((item) => item.number));
     render();
   });
   app.querySelectorAll('input[name="variant"]').forEach((input) => {
@@ -901,7 +930,7 @@ function bindOutputs() {
 }
 
 function bindReferences() {
-  app.querySelector("#catalog-as-subject").addEventListener("change", (event) => {
+  app.querySelector("#catalog-as-subject")?.addEventListener("change", (event) => {
     state.form.catalogAsSubject = event.target.checked;
     render();
   });
@@ -974,7 +1003,7 @@ function validateStep() {
   if (state.step === 2 && state.form.variants.size === 0) return "Select at least one output variant.";
   if (state.step === 3) {
     const missing = currentType().roles.find((item) =>
-      item.level === "required" && !state.form.files[item.id] && !state.form.catalogAsSubject,
+      item.level === "required" && !state.form.files[item.id] && (!state.form.catalogAsSubject || isAutomotiveRetouch()),
     );
     if (missing) return `Add the required reference: ${missing.label}.`;
   }
@@ -983,7 +1012,7 @@ function validateStep() {
 
 async function submitCampaign() {
   const missing = currentType().roles.find((item) =>
-    item.level === "required" && !state.form.files[item.id] && !state.form.catalogAsSubject,
+    item.level === "required" && !state.form.files[item.id] && (!state.form.catalogAsSubject || isAutomotiveRetouch()),
   );
   if (missing) {
     state.error = `Add the required reference: ${missing.label}.`;
@@ -1052,6 +1081,9 @@ function buildCommandPreview() {
     : "";
   const trendLine = trend ? ` Follow the "${trend.name}" trend prompt frame recorded in brief.md.` : "";
   const ruleLine = rules.length ? ` Apply prompt rule presets: ${rules.map((rule) => rule.name).join(", ")}.` : "";
+  if (isAutomotiveRetouch()) {
+    return `Run automotive retouch campaign campaigns/${slugify(state.form.name)}. Use the uploaded source vehicle photo as the locked base image for every variant. Use library references ${references} only as optional visual direction.${uploads}${ruleLine} Create edit variants ${variants} from the variant briefs. Save every result in the campaign outputs folder and update run-log.md.`;
+  }
   return `Run campaign campaigns/${slugify(state.form.name)}.${trendLine} Use library references ${references} as the visual direction.${uploads}${ruleLine} Generate variants ${variants}. Save every result in the campaign outputs folder and update run-log.md.`;
 }
 

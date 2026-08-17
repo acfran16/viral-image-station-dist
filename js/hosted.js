@@ -26,7 +26,10 @@ function selectedRules(meta, config) {
 
 function selectedVariants(meta, config) {
   const selected = new Set(meta.variants ?? []);
-  return (config.variants ?? []).filter((item) => selected.has(item.number));
+  const variants = meta.type === "automotive-retouch"
+    ? config.retouchVariants ?? config.variants ?? []
+    : config.variants ?? [];
+  return variants.filter((item) => selected.has(item.number));
 }
 
 export function buildGenerationCommand(meta, config) {
@@ -40,6 +43,9 @@ export function buildGenerationCommand(meta, config) {
     : "";
   const trendLine = trend ? ` Follow the "${trend.name}" trend prompt frame recorded in brief.md.` : "";
   const ruleLine = rules.length ? ` Apply prompt rule presets: ${rules.map((rule) => rule.name).join(", ")}.` : "";
+  if (meta.type === "automotive-retouch") {
+    return `Run automotive retouch campaign campaigns/${slug}. Use the uploaded source vehicle photo as the locked base image for every variant. Use library references ${references} only as optional visual direction.${uploads}${ruleLine} Create edit variants ${variants} from the variant briefs. Save every result in the campaign outputs folder and update run-log.md. QA each result against the source photo for unchanged car identity, badges, license plate, wheels, body shape, crop, and believable reflections.`;
+  }
   return `Run campaign campaigns/${slug}.${trendLine} Use library references ${references} as the visual direction.${uploads}${ruleLine} Generate variants ${variants}. Save every result in the campaign outputs folder and update run-log.md.`;
 }
 
@@ -74,6 +80,7 @@ function renderBrief(meta, config, uploaded, references) {
   const trend = selectedTrend(meta, config);
   const rules = selectedRules(meta, config);
   const variants = selectedVariants(meta, config);
+  const automotive = meta.type === "automotive-retouch";
   const fashionGuidance = {
     refined: "Elegant tailoring, controlled silhouettes, quiet luxury, and composed editorial posing.",
     bold: "Preserve the adult subject's original confidence, silhouette, styling intent, and level of edge. Use assertive editorial styling that fits the campaign concept.",
@@ -95,6 +102,8 @@ Audience: ${meta.audience || "General social audience"}
 
 Campaign type: ${meta.typeLabel}
 
+Workflow mode: ${automotive ? "Image-to-image edit / enhancement" : "Generate new campaign images"}
+
 Fashion energy: ${meta.type === "fashion" ? meta.fashionEnergy || "bold" : "Not applicable"}
 
 ## References
@@ -105,6 +114,8 @@ ${referenceLines.join("\n") || "No reference files were added during setup."}
 
 - Keep all generated outputs inside this campaign folder.
 - Use assigned reference roles as the source of truth.
+- ${automotive ? "Use the source vehicle photo as the locked base image for every variant." : "Use selected catalog and uploaded references as the source of truth."}
+- ${automotive ? "Preserve the original car, camera angle, crop, license plate, badges, wheels, paint color, and location unless a variant explicitly allows scene cleanup." : "Preserve product, subject, identity, and brand details where applicable."}
 - Preserve product, subject, identity, and brand details where applicable.
 - For adult fashion subjects, preserve the reference's confidence, styling intent, silhouette, and level of edge.
 - Do not add modesty, coverage, conservative styling, or desexualizing modifiers unless explicitly requested.
@@ -131,17 +142,38 @@ Avoid: ${meta.avoid || "Watermarks, accidental logos, distorted anatomy, and unr
 
 Selected variants: ${variants.map((item) => item.number).join(", ")}
 
-Generation mode: Built-in Codex image generation; no separate API key required.
+Generation mode: ${automotive ? "Codex image edit / retouch workflow; use the uploaded source vehicle photo for every output." : "Built-in Codex image generation; no separate API key required."}
 
 ## QA and Handoff
 
 - Review outputs for anatomy, product accuracy, lighting consistency, reflection problems, and platform readiness.
 - Copy usable files into \`approved/\`, failed files into \`rejected/\`, and fixable files into \`needs-rerun/\`.
 - Use \`exports/\` for approved handoff packages.
+${automotive ? "- Automotive retouch QA must compare each output against the source photo at full size: body shape, badges, license plate, wheels, panel gaps, reflections, and background continuity must remain believable.\n" : ""}
 `;
 }
 
 function renderVariantBrief(output) {
+  if (output.prompt_frame) {
+    return `# ${output.number} - ${output.name}
+
+## Use
+
+${output.platform}; ${output.purpose}; ${output.aspect_ratio} crop.
+
+## Edit Prompt
+
+\`\`\`text
+${output.prompt_frame}
+\`\`\`
+
+## Output
+
+\`\`\`text
+outputs/${output.filename}
+\`\`\`
+`;
+  }
   return `# ${output.number} - ${output.name}
 
 ## Use
@@ -182,6 +214,12 @@ function qaTemplate(name) {
 | File | Reason |
 | --- | --- |
 |  |  |
+
+## Automotive QA
+
+- Vehicle body shape, badges, license plate, wheels, panel gaps, and source crop are unchanged.
+- Reflections remain physically plausible.
+- Background cleanup does not replace the original location unless explicitly requested.
 `;
 }
 
